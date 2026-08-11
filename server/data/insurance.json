@@ -1,0 +1,51 @@
+[
+  {
+    "id": "pmfby",
+    "name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+    "tagline": "Comprehensive Crop Insurance against Non-Preventable Natural Risks",
+    "overview": "Flagship national crop insurance scheme providing financial support to farmers suffering crop loss/damage arising out of natural calamities, pests, and diseases.",
+    "premiumRates": "Kharif Crops: 2.0% | Rabi Crops: 1.5% | Commercial/Horticultural: 5.0%",
+    "benefits": [
+      "Full sum insured coverage with zero ceiling on government premium subsidy",
+      "Post-harvest loss coverage up to 14 days for un-housed crops in field",
+      "Mid-season adversity coverage for widespread drought or localized floods",
+      "Prevented sowing / planting risk coverage up to 25% of sum insured"
+    ],
+    "eligibility": "All farmers including sharecroppers and tenant farmers growing notified crops in notified areas are eligible.",
+    "helpline": "1800-200-5142",
+    "officialUrl": "https://pmfby.gov.in",
+    "icon": "shield"
+  },
+  {
+    "id": "wbcis",
+    "name": "Restructured Weather Based Crop Insurance Scheme (WBCIS)",
+    "tagline": "Index-Based Insurance Mitigating Adverse Climate Weather Triggers",
+    "overview": "Protects farmers against adverse weather conditions such as rainfall deficit/excess, frost, heat waves, high humidity, and unseasonal dry spells during critical crop growth stages.",
+    "premiumRates": "Kharif: 2.0% | Rabi: 1.5% | Oilseeds: 1.5% | Horticultural: 5.0%",
+    "benefits": [
+      "No field loss assessment delay — payout automatically triggered via weather station index",
+      "Fast compensation settlement within 45 days after harvest window",
+      "Customized weather parameters tailored for fruit orchards, vegetables, and cash crops"
+    ],
+    "eligibility": "Farmers cultivating horticultural crops, cashew, pepper, grape, tomato, or apple in designated weather station zones.",
+    "helpline": "1800-180-1551",
+    "officialUrl": "https://pmfby.gov.in",
+    "icon": "cloud-lightning"
+  },
+  {
+    "id": "unified_package_insurance",
+    "name": "Unified Package Insurance Scheme (UPIS)",
+    "tagline": "Single-Window Comprehensive Financial Protection for Farm Household & Assets",
+    "overview": "Combines crop insurance with personal accident cover, life insurance, tractor insurance, and farm asset risk cover under a single unified policy.",
+    "premiumRates": "Integrated bundle rates with subsidized agricultural component",
+    "benefits": [
+      "Covers farm equipment, pumping sets, and cattle alongside crop insurance",
+      "Personal accident coverage up to Rs. 2 Lakh for primary farmer",
+      "Simplified single application form for 7 financial products"
+    ],
+    "eligibility": "Small and marginal landholding farmers with valid Aadhaar & Kisan Credit Card (KCC).",
+    "helpline": "1800-110-001",
+    "officialUrl": "https://agricoop.nic.in",
+    "icon": "home"
+  }
+]

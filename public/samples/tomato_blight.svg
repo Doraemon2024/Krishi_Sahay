@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#F4F6F0" rx="16"/>
+  <!-- Compound Tomato Leaf -->
+  <path d="M 200 370 Q 200 200 200 30" fill="none" stroke="#2E7D4E" stroke-width="10"/>
+  <!-- Top Leaflet -->
+  <path d="M 200 30 C 160 70 160 140 200 160 C 240 140 240 70 200 30 Z" fill="#4CAF50"/>
+  <!-- Left Leaflet -->
+  <path d="M 200 180 C 110 150 70 210 130 250 C 170 240 190 200 200 180 Z" fill="#38A169"/>
+  <!-- Right Leaflet -->
+  <path d="M 200 200 C 290 170 330 230 270 270 C 230 260 210 220 200 200 Z" fill="#38A169"/>
+  <!-- Concentric Target Board Spot Blight (Early Blight) -->
+  <g fill="#2D3748" stroke="#D97706" stroke-width="3">
+    <!-- Spot 1 with Target Rings -->
+    <circle cx="120" cy="210" r="28" fill="#4A5568"/>
+    <circle cx="120" cy="210" r="20" fill="none" stroke="#718096" stroke-width="3"/>
+    <circle cx="120" cy="210" r="12" fill="none" stroke="#A0AEC0" stroke-width="3"/>
+    <circle cx="120" cy="210" r="5" fill="#1A202C"/>
+    
+    <!-- Spot 2 -->
+    <circle cx="270" cy="230" r="22" fill="#4A5568"/>
+    <circle cx="270" cy="230" r="14" fill="none" stroke="#718096" stroke-width="2"/>
+    <circle cx="270" cy="230" r="4" fill="#1A202C"/>
+  </g>
+  <!-- Yellow halo around spots -->
+  <circle cx="120" cy="210" r="42" fill="#ECC94B" opacity="0.3"/>
+  <circle cx="270" cy="230" r="34" fill="#ECC94B" opacity="0.3"/>
+  <!-- Badge -->
+  <rect x="20" y="20" width="160" height="32" rx="8" fill="#D97706"/>
+  <text x="100" y="41" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">TOMATO BLIGHT</text>
+</svg>

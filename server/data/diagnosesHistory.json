@@ -1,0 +1,101 @@
+[
+  {
+    "id": "diag_1786428518246_616",
+    "crop": "Rice (Paddy)",
+    "disease": "Rice Blast (Magnaporthe oryzae)",
+    "severity": "HIGH",
+    "severityBadgeClass": "severity-high",
+    "confidence": 93.5,
+    "uploadedImage": "/uploads/leaf-1786428517391-333261483.jpeg",
+    "summary": "Fungal infection creating diamond-shaped lesions with grayish centers on rice leaves, causing severe yield reduction if untreated during tillering.",
+    "symptoms": [
+      "Spindle-shaped or diamond-shaped spots on leaves",
+      "Lesions with reddish-brown margins and gray or white centers",
+      "Yellowing around lesions causing leaf tip drying",
+      "Lesions on node and collar areas causing stem breakage"
+    ],
+    "treatments": [
+      {
+        "step": 1,
+        "title": "Immediate Fungicide Application",
+        "description": "Spray Tricyclazole 75% WP @ 0.6g/liter of water or Isoprothiolane 40% EC @ 1.5ml/liter of water thoroughly across affected field patches."
+      },
+      {
+        "step": 2,
+        "title": "Adjust Nitrogen Fertilizer Usage",
+        "description": "Temporarily suspend top-dressing of Urea nitrogen fertilizer. Excessive nitrogen promotes soft foliage that accelerates fungal spore germination."
+      },
+      {
+        "step": 3,
+        "title": "Drain Field Excess Water",
+        "description": "Drain stagnant water for 2-3 days to lower canopy relative humidity, then re-irrigate with clean fresh water."
+      },
+      {
+        "step": 4,
+        "title": "Organic Bio-Control Application",
+        "description": "Spray Pseudomonas fluorescens @ 10g/liter of water in the early morning as a bio-fungicidal follow-up 5 days after chemical spray."
+      }
+    ],
+    "warnings": [
+      "Do not apply systemic fungicide during rainfall or within 3 hours before expected rain.",
+      "Avoid spraying in hot mid-day sun to prevent leaf scorching."
+    ],
+    "prevention": [
+      "Use certified disease-resistant varieties such as Swarna Sub1 or PR 126",
+      "Treat seeds with Carbendazim @ 2g/kg seed before sowing",
+      "Maintain recommended plant spacing (20cm x 15cm) to ensure adequate airflow",
+      "Destroy field stubble and weed hosts around field bunds"
+    ],
+    "weatherAdvisory": {
+      "recommendation": "Spray recommended fungicide immediately within the next 24-36 hours.",
+      "actionTime": "Early Morning (6:00 AM - 9:00 AM) or Late Evening",
+      "humidityThreshold": "High (>85% relative humidity favors blast spore release)",
+      "idealTemp": "20°C - 28°C",
+      "sprayStatus": "SAFE_TO_SPRAY",
+      "sprayStatusText": "Good time to spray - Low rain probability for next 18 hours"
+    },
+    "timestamp": "2026-08-11T06:08:38.246Z",
+    "formattedDate": "11 Aug 2026, 11:38 am",
+    "location": "Ludhiana, Punjab"
+  },
+  {
+    "id": "diag_demo_1",
+    "crop": "Rice (Paddy)",
+    "disease": "Rice Blast (Magnaporthe oryzae)",
+    "severity": "HIGH",
+    "severityBadgeClass": "severity-high",
+    "confidence": 95.2,
+    "sampleImage": "/samples/rice_blast.jpg",
+    "summary": "Fungal infection creating diamond-shaped lesions with grayish centers on rice leaves.",
+    "symptoms": [
+      "Spindle-shaped or diamond-shaped spots on leaves",
+      "Lesions with reddish-brown margins and gray or white centers"
+    ],
+    "treatments": [
+      {
+        "step": 1,
+        "title": "Immediate Fungicide Application",
+        "description": "Spray Tricyclazole 75% WP @ 0.6g/liter of water thoroughly across affected field patches."
+      },
+      {
+        "step": 2,
+        "title": "Adjust Nitrogen Fertilizer Usage",
+        "description": "Temporarily suspend top-dressing of Urea nitrogen fertilizer."
+      }
+    ],
+    "prevention": [
+      "Use certified disease-resistant varieties such as Swarna Sub1",
+      "Treat seeds with Carbendazim @ 2g/kg seed before sowing"
+    ],
+    "weatherAdvisory": {
+      "recommendation": "Spray recommended fungicide immediately within the next 24-36 hours.",
+      "actionTime": "Early Morning (6:00 AM - 9:00 AM)",
+      "humidityThreshold": "High (>85% relative humidity favors blast spore release)",
+      "sprayStatus": "SAFE_TO_SPRAY",
+      "sprayStatusText": "Good time to spray - Low rain probability for next 18 hours"
+    },
+    "timestamp": "2026-08-11T09:30:00.000Z",
+    "formattedDate": "11 Aug 2026, 09:30 AM",
+    "location": "Ludhiana, Punjab"
+  }
+]

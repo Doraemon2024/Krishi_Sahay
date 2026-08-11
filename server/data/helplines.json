@@ -1,0 +1,46 @@
+[
+  {
+    "id": "kisan_call_center",
+    "name": "Kisan Call Center (KCC) - Govt of India",
+    "phone": "1800-180-1551",
+    "dialNumber": "18001801551",
+    "description": "Toll-free nationwide agricultural hotline providing instant expert advice on crop diseases, pest management, soil health, fertilizer dosing, and market prices in 22 local languages.",
+    "timings": "6:00 AM - 10:00 PM (Daily)",
+    "category": "Government National Hotline",
+    "icon": "phone-call",
+    "whatsapp": "+9118001801551"
+  },
+  {
+    "id": "plant_pathology_advisory",
+    "name": "ICAR Plant Pathology & Crop Protection Advisory",
+    "phone": "1800-11-8484",
+    "dialNumber": "1800118484",
+    "description": "Dedicated specialist helpline operated by Indian Council of Agricultural Research scientists for diagnosing mystery crop leaf wilt, fungal epidemics, and pest outbreaks.",
+    "timings": "9:00 AM - 6:00 PM (Mon - Sat)",
+    "category": "Scientific Research & Disease Expert",
+    "icon": "microscope",
+    "whatsapp": "+919876543210"
+  },
+  {
+    "id": "kvk_district_network",
+    "name": "Krishi Vigyan Kendra (KVK) District Emergency Network",
+    "phone": "1800-200-1020",
+    "dialNumber": "18002001020",
+    "description": "Connect directly to your local district KVK extension officer for field visit requests, soil testing kit pick-up, bio-fertilizer supply, and localized crop advisories.",
+    "timings": "9:30 AM - 5:30 PM (Mon - Sat)",
+    "category": "District Field Extension Support",
+    "icon": "map-pin",
+    "whatsapp": "+9118002001020"
+  },
+  {
+    "id": "pmfby_crop_insurance_helpline",
+    "name": "PM Fasal Bima Yojana (PMFBY) Crop Loss Claim Hotline",
+    "phone": "1800-200-5142",
+    "dialNumber": "18002005142",
+    "description": "Toll-free helpline to report localized crop loss, severe hail/flood damage within 72 hours for immediate crop insurance surveyor inspection.",
+    "timings": "24/7 Emergency Support",
+    "category": "Crop Insurance Claims",
+    "icon": "shield-check",
+    "whatsapp": "+9118002005142"
+  }
+]

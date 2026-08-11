@@ -1,0 +1,236 @@
+[
+  {
+    "id": "rice_blast",
+    "crop": "Rice (Paddy)",
+    "disease": "Rice Blast (Magnaporthe oryzae)",
+    "severity": "HIGH",
+    "severityBadgeClass": "severity-high",
+    "defaultConfidence": 94.8,
+    "sampleImage": "/samples/rice_blast.jpg",
+    "summary": "Fungal infection creating diamond-shaped lesions with grayish centers on rice leaves, causing severe yield reduction if untreated during tillering.",
+    "symptoms": [
+      "Spindle-shaped or diamond-shaped spots on leaves",
+      "Lesions with reddish-brown margins and gray or white centers",
+      "Yellowing around lesions causing leaf tip drying",
+      "Lesions on node and collar areas causing stem breakage"
+    ],
+    "treatments": [
+      {
+        "step": 1,
+        "title": "Immediate Fungicide Application",
+        "description": "Spray Tricyclazole 75% WP @ 0.6g/liter of water or Isoprothiolane 40% EC @ 1.5ml/liter of water thoroughly across affected field patches."
+      },
+      {
+        "step": 2,
+        "title": "Adjust Nitrogen Fertilizer Usage",
+        "description": "Temporarily suspend top-dressing of Urea nitrogen fertilizer. Excessive nitrogen promotes soft foliage that accelerates fungal spore germination."
+      },
+      {
+        "step": 3,
+        "title": "Drain Field Excess Water",
+        "description": "Drain stagnant water for 2-3 days to lower canopy relative humidity, then re-irrigate with clean fresh water."
+      },
+      {
+        "step": 4,
+        "title": "Organic Bio-Control Application",
+        "description": "Spray Pseudomonas fluorescens @ 10g/liter of water in the early morning as a bio-fungicidal follow-up 5 days after chemical spray."
+      }
+    ],
+    "warnings": [
+      "Do not apply systemic fungicide during rainfall or within 3 hours before expected rain.",
+      "Avoid spraying in hot mid-day sun to prevent leaf scorching."
+    ],
+    "prevention": [
+      "Use certified disease-resistant varieties such as Swarna Sub1 or PR 126",
+      "Treat seeds with Carbendazim @ 2g/kg seed before sowing",
+      "Maintain recommended plant spacing (20cm x 15cm) to ensure adequate airflow",
+      "Destroy field stubble and weed hosts around field bunds"
+    ],
+    "weatherAdvisory": {
+      "recommendation": "Spray recommended fungicide immediately within the next 24-36 hours.",
+      "actionTime": "Early Morning (6:00 AM - 9:00 AM) or Late Evening",
+      "humidityThreshold": "High (>85% relative humidity favors blast spore release)",
+      "idealTemp": "20°C - 28°C",
+      "sprayStatus": "SAFE_TO_SPRAY",
+      "sprayStatusText": "Good time to spray - Low rain probability for next 18 hours"
+    }
+  },
+  {
+    "id": "tomato_early_blight",
+    "crop": "Tomato",
+    "disease": "Tomato Early Blight (Alternaria solani)",
+    "severity": "MEDIUM",
+    "severityBadgeClass": "severity-medium",
+    "defaultConfidence": 92.4,
+    "sampleImage": "/samples/tomato_blight.jpg",
+    "summary": "Common fungal disease characterized by concentric target-board dark rings on older lower leaves, eventually spreading upwards.",
+    "symptoms": [
+      "Dark brown to black spots with characteristic concentric rings on lower leaves",
+      "Yellow halo surrounding leaf lesions",
+      "Premature leaf drop starting from lower plant branches",
+      "Sunken dark lesions near stem junctions and fruit calyx"
+    ],
+    "treatments": [
+      {
+        "step": 1,
+        "title": "Prune Infected Lower Leaves",
+        "description": "Carefully trim off lower infected leaves up to 12 inches from the soil surface using sterilized shears and dispose of them away from the farm."
+      },
+      {
+        "step": 2,
+        "title": "Fungicide Foliar Spray",
+        "description": "Apply Mancozeb 75% WP @ 2g/liter of water or Copper Oxychloride 50% WP @ 3g/liter. Alternate with Azoxystrobin after 10 days."
+      },
+      {
+        "step": 3,
+        "title": "Apply Soil Mulching",
+        "description": "Spread straw mulch or plastic mulch around plant bases to prevent soil-borne fungal spores from splashing onto lower leaves during irrigation."
+      }
+    ],
+    "warnings": [
+      "Avoid overhead sprinkler irrigation; always irrigate near the plant root base."
+    ],
+    "prevention": [
+      "Practice 3-year crop rotation with non-solanaceous crops (e.g. maize, legumes)",
+      "Maintain adequate plant spacing (60cm x 45cm) for sunlight penetration",
+      "Apply Trichoderma viride enriched organic compost during land preparation"
+    ],
+    "weatherAdvisory": {
+      "recommendation": "Spray protectant fungicide after morning dew dries.",
+      "actionTime": "Morning (8:00 AM - 11:00 AM)",
+      "humidityThreshold": "Moderate to High",
+      "idealTemp": "24°C - 30°C",
+      "sprayStatus": "RECOMMENDED",
+      "sprayStatusText": "Ideal weather conditions for application"
+    }
+  },
+  {
+    "id": "wheat_yellow_rust",
+    "crop": "Wheat",
+    "disease": "Yellow Stripe Rust (Puccinia striiformis)",
+    "severity": "HIGH",
+    "severityBadgeClass": "severity-high",
+    "defaultConfidence": 96.1,
+    "sampleImage": "/samples/wheat_rust.jpg",
+    "summary": "Airborne fungal pathogen producing bright yellow linear stripe pustules along leaf veins, rapidly spreading in cool moist weather.",
+    "symptoms": [
+      "Bright yellow powdery pustules arranged in linear stripes on leaf blades",
+      "Pustules rub off easily onto fingers, leaving yellow powder",
+      "Leaves turn chlorotic, dry out, and shrivel prematurely",
+      "Reduced earhead size and shriveled grain development"
+    ],
+    "treatments": [
+      {
+        "step": 1,
+        "title": "Emergency Foliar Spray",
+        "description": "Spray Propiconazole 25% EC @ 1ml/liter of water (200ml in 200 liters of water per acre) immediately upon first spot detection."
+      },
+      {
+        "step": 2,
+        "title": "Community Border Barrier Spray",
+        "description": "Coordinate with neighboring farmers to spray border rows to contain airborne urediniospores from spreading to adjacent fields."
+      }
+    ],
+    "warnings": [
+      "Delaying spray by more than 5 days can lead to up to 40% yield loss in susceptible wheat varieties."
+    ],
+    "prevention": [
+      "Sow rust-resistant recommended wheat cultivars (e.g. HD 3086, DBW 187, PBW 725)",
+      "Avoid late sowing beyond November 25th in northern plains",
+      "Monitor fields regularly during cool misty morning weather"
+    ],
+    "weatherAdvisory": {
+      "recommendation": "Immediate application required due to cool misty weather favorable for spore multiplication.",
+      "actionTime": "Early Morning",
+      "humidityThreshold": "High (Misty mornings)",
+      "idealTemp": "10°C - 20°C",
+      "sprayStatus": "URGENT",
+      "sprayStatusText": "Urgent spray advised - High spore transmission risk"
+    }
+  },
+  {
+    "id": "cotton_bacterial_blight",
+    "crop": "Cotton",
+    "disease": "Bacterial Blight / Angular Leaf Spot (Xanthomonas citri pv. malvacearum)",
+    "severity": "MEDIUM",
+    "severityBadgeClass": "severity-medium",
+    "defaultConfidence": 91.2,
+    "sampleImage": "/samples/cotton_blight.jpg",
+    "summary": "Bacterial infection causing angular water-soaked lesions bounded by leaf veins, stem black arm, and boll rot.",
+    "symptoms": [
+      "Angular water-soaked spots bounded by small leaf veins",
+      "Lesions turn dark brown to black as tissue dries out",
+      "Dark lesions on stems ('Black Arm' phase) causing lodging",
+      "Sunken circular water-soaked lesions on cotton bolls"
+    ],
+    "treatments": [
+      {
+        "step": 1,
+        "title": "Bactericide & Copper Spray",
+        "description": "Spray Streptocycline @ 0.5g + Copper Oxychloride @ 2.5g per liter of water. Repeat spray after 12-15 days if rain persists."
+      },
+      {
+        "step": 2,
+        "title": "Foliar Micronutrient Support",
+        "description": "Mix 1% Potassium Nitrate (10g/L) to boost plant physiological defense during recovery."
+      }
+    ],
+    "warnings": [
+      "Do not use broad-spectrum organophosphate insecticides simultaneously with bactericides."
+    ],
+    "prevention": [
+      "Delint seeds using concentrated sulfuric acid before sowing",
+      "Treat seeds with Streptocycline (100 ppm) for 2 hours before sowing",
+      "Destroy infected crop residues post harvest"
+    ],
+    "weatherAdvisory": {
+      "recommendation": "Apply bactericide spray before forecasted rain showers.",
+      "actionTime": "Late Afternoon (4:00 PM - 6:30 PM)",
+      "humidityThreshold": ">75%",
+      "idealTemp": "28°C - 35°C",
+      "sprayStatus": "RECOMMENDED",
+      "sprayStatusText": "Spray before rain to protect foliage"
+    }
+  },
+  {
+    "id": "healthy_crop",
+    "crop": "General Crop",
+    "disease": "Healthy Crop - No Disease Detected",
+    "severity": "NONE",
+    "severityBadgeClass": "severity-low",
+    "defaultConfidence": 98.9,
+    "sampleImage": "/samples/healthy_leaf.jpg",
+    "summary": "The leaf foliage shows bright uniform pigmentation, strong cell structural integrity, and no visible fungal or bacterial lesions.",
+    "symptoms": [
+      "Vibrant uniform green coloration across entire blade",
+      "Clean vein network without necrotic spots or yellow halos",
+      "Sturdy leaf tissue and healthy cuticle coating"
+    ],
+    "treatments": [
+      {
+        "step": 1,
+        "title": "Maintain Standard Agronomic Care",
+        "description": "Continue regular balanced irrigation schedule and soil moisture maintenance according to crop stage."
+      },
+      {
+        "step": 2,
+        "title": "Balanced Nutrient Management",
+        "description": "Apply recommended dosage of N-P-K based on soil testing report."
+      }
+    ],
+    "warnings": [],
+    "prevention": [
+      "Inspect field weekly for early pest/disease entry",
+      "Keep field bunds free from weed reservoirs",
+      "Maintain optimal soil bio-health with organic FYM compost"
+    ],
+    "weatherAdvisory": {
+      "recommendation": "No treatment necessary. Maintain standard routine irrigation.",
+      "actionTime": "As per normal schedule",
+      "humidityThreshold": "Normal",
+      "idealTemp": "Ambient",
+      "sprayStatus": "NO_ACTION_NEEDED",
+      "sprayStatusText": "Crop in excellent health - Keep up good practices!"
+    }
+  }
+]

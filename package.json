@@ -1,0 +1,27 @@
+{
+  "name": "krishisahay-agritech",
+  "version": "1.0.0",
+  "description": "KrishiSahay - Modern Agricultural Technology Platform for AI Crop Diagnosis, Weather Advisories, and Farmer Support Services",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "agritech",
+    "crop-health",
+    "ai-diagnosis",
+    "weather-risk",
+    "farming",
+    "krishisahay"
+  ],
+  "author": "KrishiSahay Team",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}

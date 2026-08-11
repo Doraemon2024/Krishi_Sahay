@@ -1,0 +1,54 @@
+[
+  {
+    "id": "event_1",
+    "title": "National Smart Paddy Disease Prevention Workshop",
+    "date": "Aug 28, 2026",
+    "time": "10:00 AM - 1:30 PM",
+    "location": "Krishi Vigyan Kendra Demonstration Farm, Ludhiana, Punjab & Online Live",
+    "organizer": "ICAR - Central Rice Research Institute",
+    "category": "Disease Management Workshop",
+    "description": "Interactive hands-on session on early identification of Paddy Blast, sheath blight, and bio-friendly Trichoderma soil treatment methods before the Kharif heading stage.",
+    "icon": "calendar",
+    "status": "Upcoming",
+    "registrationFee": "Free (Registration Required)"
+  },
+  {
+    "id": "event_2",
+    "title": "Organic Soil Health & Micro-Nutrient Dosing Camp",
+    "date": "Sep 05, 2026",
+    "time": "9:30 AM - 4:00 PM",
+    "location": "District Agriculture Office Ground, Nashik, Maharashtra",
+    "organizer": "Department of Agriculture & Farmers Welfare, Maharashtra",
+    "category": "Soil Health & Fertilizer Camp",
+    "description": "Free soil sample testing camp! Bring 200g of field soil to receive instant Soil Health Cards, N-P-K deficiency analysis, and customized organic bio-fertilizer recommendations.",
+    "icon": "activity",
+    "status": "Registration Open",
+    "registrationFee": "Free"
+  },
+  {
+    "id": "event_3",
+    "title": "Smart Solar Irrigation & PM-KUSUM Scheme Webinar",
+    "date": "Sep 14, 2026",
+    "time": "3:00 PM - 5:00 PM",
+    "location": "Virtual Zoom Webinar & YouTube Live Broadcast",
+    "organizer": "Ministry of New and Renewable Energy (MNRE)",
+    "category": "Technology & Subsidy Webinar",
+    "description": "Learn how to apply for up to 90% government subsidy on off-grid solar water pumps under PM-KUSUM Component-B and reduce farm diesel grid electricity bills.",
+    "icon": "sun",
+    "status": "Upcoming",
+    "registrationFee": "Free Online Access"
+  },
+  {
+    "id": "event_4",
+    "title": "Wheat Stripe Rust Surveillance & Climate Resilience Summit",
+    "date": "Oct 02, 2026",
+    "time": "10:30 AM - 3:30 PM",
+    "location": " Chaudhary Charan Singh Haryana Agricultural University, Hisar",
+    "organizer": "Indian Institute of Wheat & Barley Research (IIWBR)",
+    "category": "Scientific Summit & Seed Distribution",
+    "description": "Pre-Rabi season orientation on high-yielding rust-resistant seed varieties (DBW 187, DBW 303) and drone-based precision pesticide spraying demonstrations.",
+    "icon": "award",
+    "status": "Upcoming",
+    "registrationFee": "Free for Registered Farmers"
+  }
+]

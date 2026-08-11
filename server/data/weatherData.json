@@ -1,0 +1,108 @@
+{
+  "regions": [
+    {
+      "id": "punjab",
+      "name": "Punjab (Ludhiana / Amritsar)",
+      "state": "Punjab",
+      "temp": 28,
+      "condition": "Partly Cloudy",
+      "conditionIcon": "cloud-sun",
+      "humidity": 82,
+      "rainProbability": 65,
+      "windSpeed": 14,
+      "uvIndex": 6,
+      "riskLevel": "HIGH",
+      "riskBadgeClass": "risk-high",
+      "riskScore": 78,
+      "riskReason": "High atmospheric humidity (82%) combined with 65% rain probability creates an optimal humid environment for fungal spore germination (Rice Blast & Yellow Rust).",
+      "recommendedAction": "Spray protective systemic fungicide within 24 hours. Ensure drainage channels are clear of debris.",
+      "forecast": [
+        { "day": "Today", "high": 29, "low": 21, "condition": "Partly Cloudy", "rain": 65, "humidity": 82, "icon": "cloud-sun" },
+        { "day": "Tomorrow", "high": 27, "low": 20, "condition": "Light Showers", "rain": 80, "humidity": 88, "icon": "cloud-rain" },
+        { "day": "Thu", "high": 30, "low": 22, "condition": "Sunny Spells", "rain": 30, "humidity": 70, "icon": "sun" },
+        { "day": "Fri", "high": 31, "low": 23, "condition": "Clear", "rain": 10, "humidity": 62, "icon": "sun" },
+        { "day": "Sat", "high": 32, "low": 24, "condition": "Partly Cloudy", "rain": 25, "humidity": 65, "icon": "cloud-sun" },
+        { "day": "Sun", "high": 30, "low": 22, "condition": "Overcast", "rain": 45, "humidity": 75, "icon": "cloud" },
+        { "day": "Mon", "high": 28, "low": 21, "condition": "Moderate Rain", "rain": 70, "humidity": 85, "icon": "cloud-rain" }
+      ]
+    },
+    {
+      "id": "maharashtra",
+      "name": "Maharashtra (Nashik / Pune)",
+      "state": "Maharashtra",
+      "temp": 31,
+      "condition": "Sunny",
+      "conditionIcon": "sun",
+      "humidity": 54,
+      "rainProbability": 15,
+      "windSpeed": 11,
+      "uvIndex": 8,
+      "riskLevel": "LOW",
+      "riskBadgeClass": "risk-low",
+      "riskScore": 24,
+      "riskReason": "Warm dry conditions with moderate humidity (54%) minimize foliage moisture retention, suppressing major fungal outbreak risks.",
+      "recommendedAction": "Excellent spray window available. Conduct routine irrigation and inspect lower leaves for thrips or red spider mites.",
+      "forecast": [
+        { "day": "Today", "high": 31, "low": 22, "condition": "Sunny", "rain": 15, "humidity": 54, "icon": "sun" },
+        { "day": "Tomorrow", "high": 32, "low": 23, "condition": "Clear", "rain": 10, "humidity": 50, "icon": "sun" },
+        { "day": "Thu", "high": 33, "low": 23, "condition": "Sunny", "rain": 5, "humidity": 48, "icon": "sun" },
+        { "day": "Fri", "high": 31, "low": 22, "condition": "Partly Cloudy", "rain": 20, "humidity": 58, "icon": "cloud-sun" },
+        { "day": "Sat", "high": 30, "low": 21, "condition": "Sunny", "rain": 15, "humidity": 55, "icon": "sun" },
+        { "day": "Sun", "high": 32, "low": 22, "condition": "Clear", "rain": 10, "humidity": 52, "icon": "sun" },
+        { "day": "Mon", "high": 33, "low": 24, "condition": "Sunny", "rain": 5, "humidity": 49, "icon": "sun" }
+      ]
+    },
+    {
+      "id": "uttar_pradesh",
+      "name": "Uttar Pradesh (Varanasi / Lucknow)",
+      "state": "Uttar Pradesh",
+      "temp": 30,
+      "condition": "Humid / Overcast",
+      "conditionIcon": "cloud",
+      "humidity": 76,
+      "rainProbability": 45,
+      "windSpeed": 9,
+      "uvIndex": 7,
+      "riskLevel": "MEDIUM",
+      "riskBadgeClass": "risk-medium",
+      "riskScore": 58,
+      "riskReason": "Sustained high relative humidity (76%) and cloudy canopy cover increase vulnerability to Early Blight and bacterial leaf spots.",
+      "recommendedAction": "Monitor tomato, paddy, and potato fields twice weekly. Avoid late evening irrigation to prevent leaf wetness overnight.",
+      "forecast": [
+        { "day": "Today", "high": 30, "low": 23, "condition": "Humid / Overcast", "rain": 45, "humidity": 76, "icon": "cloud" },
+        { "day": "Tomorrow", "high": 29, "low": 22, "condition": "Scattered Thunderstorms", "rain": 60, "humidity": 82, "icon": "cloud-rain" },
+        { "day": "Thu", "high": 31, "low": 23, "condition": "Partly Cloudy", "rain": 30, "humidity": 72, "icon": "cloud-sun" },
+        { "day": "Fri", "high": 32, "low": 24, "condition": "Sunny", "rain": 15, "humidity": 65, "icon": "sun" },
+        { "day": "Sat", "high": 31, "low": 23, "condition": "Overcast", "rain": 40, "humidity": 74, "icon": "cloud" },
+        { "day": "Sun", "high": 30, "low": 22, "condition": "Light Rain", "rain": 55, "humidity": 80, "icon": "cloud-rain" },
+        { "day": "Mon", "high": 31, "low": 23, "condition": "Partly Cloudy", "rain": 25, "humidity": 68, "icon": "cloud-sun" }
+      ]
+    },
+    {
+      "id": "karnataka",
+      "name": "Karnataka (Bengaluru / Shimoga)",
+      "state": "Karnataka",
+      "temp": 26,
+      "condition": "Breezy / Light Rain",
+      "conditionIcon": "cloud-rain",
+      "humidity": 85,
+      "rainProbability": 70,
+      "windSpeed": 18,
+      "uvIndex": 5,
+      "riskLevel": "HIGH",
+      "riskBadgeClass": "risk-high",
+      "riskScore": 81,
+      "riskReason": "High humidity (85%) combined with gusty winds and frequent drizzles rapidly spreads bacterial leaf blight and downey mildew.",
+      "recommendedAction": "Apply contact bio-fungicides during dry rain intervals. Check for waterlogging around crop roots.",
+      "forecast": [
+        { "day": "Today", "high": 26, "low": 19, "condition": "Breezy / Light Rain", "rain": 70, "humidity": 85, "icon": "cloud-rain" },
+        { "day": "Tomorrow", "high": 25, "low": 18, "condition": "Moderate Rain", "rain": 85, "humidity": 90, "icon": "cloud-rain" },
+        { "day": "Thu", "high": 27, "low": 19, "condition": "Overcast", "rain": 50, "humidity": 78, "icon": "cloud" },
+        { "day": "Fri", "high": 28, "low": 20, "condition": "Partly Cloudy", "rain": 30, "humidity": 72, "icon": "cloud-sun" },
+        { "day": "Sat", "high": 27, "low": 19, "condition": "Light Showers", "rain": 60, "humidity": 82, "icon": "cloud-rain" },
+        { "day": "Sun", "high": 28, "low": 20, "condition": "Partly Cloudy", "rain": 35, "humidity": 75, "icon": "cloud-sun" },
+        { "day": "Mon", "high": 29, "low": 21, "condition": "Sunny Spells", "rain": 20, "humidity": 68, "icon": "sun" }
+      ]
+    }
+  ]
+}
