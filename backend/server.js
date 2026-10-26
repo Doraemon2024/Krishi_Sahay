@@ -17,6 +17,7 @@ const helplinesRoutes = require('./routes/helplinesRoutes');
 const insuranceRoutes = require('./routes/insuranceRoutes');
 const awarenessRoutes = require('./routes/awarenessRoutes');
 const privacyRoutes = require('./routes/privacyRoutes');
+const syncRoutes = require('./routes/syncRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -54,6 +55,7 @@ app.use('/api', helplinesRoutes);
 app.use('/api', insuranceRoutes);
 app.use('/api', awarenessRoutes);
 app.use('/api', privacyRoutes);
+app.use('/api', syncRoutes);
 
 // Health Check API
 app.get('/api/health', (req, res) => {

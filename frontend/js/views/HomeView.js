@@ -2,6 +2,8 @@
  * Home Page View Component
  */
 async function renderHomeView() {
+  const t = (k, f) => (typeof I18nService !== 'undefined' ? I18nService.t(k, f) : f);
+
   return `
     <!-- Hero Section -->
     <section class="hero-section">
@@ -14,22 +16,22 @@ async function renderHomeView() {
             </div>
             
             <h1 class="hero-title">
-              Smart Farming Starts Here.
+              ${t('hero_title', 'Smart Farming Starts Here.')}
             </h1>
             
             <p class="hero-description">
-              Protect your crops from disease, access real-time weather advisories, receive targeted treatment steps, and connect with official government support services.
+              ${t('hero_desc', 'Protect your crops from disease, access real-time weather advisories, receive targeted treatment steps, and connect with official government support services across all Indian states.')}
             </p>
 
             <div class="hero-cta-group">
               <a href="#upload" class="btn btn-primary">
                 ${svgIcons.camera(20)}
-                <span>Check Crop Health</span>
+                <span>${t('hero_btn_check', 'Check Crop Health')}</span>
               </a>
               
               <a href="#weather" class="btn btn-secondary">
                 ${svgIcons.weather(20)}
-                <span>View Weather Risk</span>
+                <span>${t('hero_btn_weather', 'View Weather Risk')}</span>
               </a>
             </div>
 
@@ -53,7 +55,7 @@ async function renderHomeView() {
           <!-- Hero Right Visual Card -->
           <div>
             <div class="hero-visual-card">
-              <img src="/samples/rice_blast.svg" alt="Rice Paddy Crop Health Inspection" class="hero-visual-img">
+              <img src="/samples/krishi_hero.jpg" alt="Indian Farmer Digital Crop Inspection" class="hero-visual-img" style="object-fit: cover; width: 100%; border-radius: var(--radius-lg);">
               
               <div class="floating-stat-badge">
                 <div class="stat-icon">
@@ -74,8 +76,8 @@ async function renderHomeView() {
     <section class="page-section">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Comprehensive Farmer Support Services</h2>
-          <p class="section-subtitle">Designed specifically for daily agricultural decision-making with instant AI guidance.</p>
+          <h2 class="section-title">${t('core_services_title', 'Comprehensive Farmer Support Services')}</h2>
+          <p class="section-subtitle">${t('core_services_sub', 'Designed specifically for daily agricultural decision-making with instant AI guidance.')}</p>
         </div>
 
         <div class="grid-3">
@@ -87,12 +89,12 @@ async function renderHomeView() {
               </div>
               <span class="badge badge-low">AI Enabled</span>
             </div>
-            <h3 class="card-title">Crop Health AI</h3>
+            <h3 class="card-title">${t('card_health_title', 'Crop Health AI')}</h3>
             <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: var(--space-4);">
-              Upload or snap a leaf photo to detect fungal, bacterial, or pest diseases instantly with confidence scores.
+              ${t('card_health_desc', 'Upload or snap a leaf photo to detect fungal, bacterial, or pest diseases instantly with confidence scores.')}
             </p>
             <span style="font-size: 0.85rem; font-weight: 600; color: var(--primary-green); display: flex; align-items: center; gap: 4px;">
-              Scan Leaf Now ${svgIcons.arrowRight(16)}
+              ${t('card_health_btn', 'Scan Leaf Now')} ${svgIcons.arrowRight(16)}
             </span>
           </div>
 
@@ -104,12 +106,12 @@ async function renderHomeView() {
               </div>
               <span class="badge badge-medium">Climate Score</span>
             </div>
-            <h3 class="card-title">Weather & Climate Risk</h3>
+            <h3 class="card-title">${t('card_weather_title', 'Weather & Climate Risk')}</h3>
             <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: var(--space-4);">
-              Agricultural weather forecast and regional Climate Risk Score (LOW/MED/HIGH) predicting spore outbreaks.
+              ${t('card_weather_desc', 'Agricultural weather forecast and regional Climate Risk Score (LOW/MED/HIGH) predicting spore outbreaks.')}
             </p>
             <span style="font-size: 0.85rem; font-weight: 600; color: var(--accent-gold); display: flex; align-items: center; gap: 4px;">
-              View Forecast ${svgIcons.arrowRight(16)}
+              ${t('card_weather_btn', 'View Forecast')} ${svgIcons.arrowRight(16)}
             </span>
           </div>
 
@@ -121,12 +123,12 @@ async function renderHomeView() {
               </div>
               <span class="badge badge-info">Action Plan</span>
             </div>
-            <h3 class="card-title">AI Recommendations</h3>
+            <h3 class="card-title">${t('card_rec_title', 'AI Recommendations')}</h3>
             <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: var(--space-4);">
-              Priority-based farming actions categorized into Immediate, Treatment, Prevention, and Spray timing.
+              ${t('card_rec_desc', 'Priority-based farming actions categorized into Immediate, Treatment, Prevention, and Spray timing.')}
             </p>
             <span style="font-size: 0.85rem; font-weight: 600; color: var(--color-info); display: flex; align-items: center; gap: 4px;">
-              View Advisories ${svgIcons.arrowRight(16)}
+              ${t('card_rec_btn', 'View Action Plan')} ${svgIcons.arrowRight(16)}
             </span>
           </div>
 
@@ -138,12 +140,12 @@ async function renderHomeView() {
               </div>
               <span class="badge badge-low">Foliage History</span>
             </div>
-            <h3 class="card-title">Diagnosis Dashboard</h3>
+            <h3 class="card-title">${t('dash_title', 'Diagnosis Dashboard')}</h3>
             <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: var(--space-4);">
-              Track your field diagnosis history, season health summaries, and download reports for land management.
+              ${t('dash_sub', 'Track your field diagnosis history, season health summaries, and download reports for land management.')}
             </p>
             <span style="font-size: 0.85rem; font-weight: 600; color: var(--secondary-green); display: flex; align-items: center; gap: 4px;">
-              Open History ${svgIcons.arrowRight(16)}
+              ${t('nav_dashboard', 'Open History')} ${svgIcons.arrowRight(16)}
             </span>
           </div>
 
@@ -155,12 +157,12 @@ async function renderHomeView() {
               </div>
               <span class="badge badge-high">24/7 Emergency</span>
             </div>
-            <h3 class="card-title">Farmer Helplines</h3>
+            <h3 class="card-title">${t('card_help_title', 'Farmer Helplines')}</h3>
             <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: var(--space-4);">
-              Toll-free Kisan Call Center (1800-180-1551), ICAR pathology advisory, and district extension contacts.
+              ${t('card_help_desc', 'Toll-free Kisan Call Center (1800-180-1551), ICAR pathology advisory, and district extension contacts.')}
             </p>
             <span style="font-size: 0.85rem; font-weight: 600; color: var(--color-danger); display: flex; align-items: center; gap: 4px;">
-              Call Support ${svgIcons.arrowRight(16)}
+              ${t('card_help_btn', 'Call Support')} ${svgIcons.arrowRight(16)}
             </span>
           </div>
 
@@ -172,12 +174,12 @@ async function renderHomeView() {
               </div>
               <span class="badge badge-low">Government</span>
             </div>
-            <h3 class="card-title">Crop Insurance</h3>
+            <h3 class="card-title">${t('card_ins_title', 'Crop Insurance')}</h3>
             <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: var(--space-4);">
-              Pradhan Mantri Fasal Bima Yojana (PMFBY) guidelines, weather-index schemes, and claim assistance.
+              ${t('card_ins_desc', 'Pradhan Mantri Fasal Bima Yojana (PMFBY) guidelines, weather-index schemes, and claim assistance.')}
             </p>
             <span style="font-size: 0.85rem; font-weight: 600; color: var(--primary-green); display: flex; align-items: center; gap: 4px;">
-              Explore Schemes ${svgIcons.arrowRight(16)}
+              ${t('card_ins_btn', 'Explore Schemes')} ${svgIcons.arrowRight(16)}
             </span>
           </div>
         </div>

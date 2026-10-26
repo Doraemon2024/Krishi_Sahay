@@ -7,6 +7,9 @@ class ApiClient {
   /**
    * Submit leaf photo or sample ID for AI Diagnosis
    */
+  /**
+   * Submit leaf photo or sample ID for AI Diagnosis
+   */
   static async diagnoseCrop(formData) {
     try {
       const response = await fetch(`${API_BASE}/diagnose`, {
@@ -15,7 +18,8 @@ class ApiClient {
       });
       const json = await response.json();
       if (!response.ok) throw new Error(json.message || 'Diagnosis failed');
-      return json.data;
+      const data = json.data;
+      return typeof I18nService !== 'undefined' ? I18nService.translateOnlineData(data, 'diagnosis') : data;
     } catch (error) {
       console.error('API Diagnose Error:', error);
       throw error;
@@ -29,7 +33,11 @@ class ApiClient {
     try {
       const response = await fetch(`${API_BASE}/diagnoses`);
       const json = await response.json();
-      return json.data || [];
+      const list = json.data || [];
+      if (typeof I18nService !== 'undefined') {
+        return list.map(item => I18nService.translateOnlineData(item, 'diagnosis'));
+      }
+      return list;
     } catch (error) {
       console.error('API History Error:', error);
       return [];
@@ -43,7 +51,8 @@ class ApiClient {
     try {
       const response = await fetch(`${API_BASE}/diagnoses/${id}`);
       const json = await response.json();
-      return json.data || null;
+      const data = json.data || null;
+      return (data && typeof I18nService !== 'undefined') ? I18nService.translateOnlineData(data, 'diagnosis') : data;
     } catch (error) {
       console.error('API Diagnosis Detail Error:', error);
       return null;
@@ -51,13 +60,17 @@ class ApiClient {
   }
 
   /**
-   * Fetch Weather & Climate Risk Score
+   * Fetch Weather & Climate Risk Score for ANY location in India
    */
-  static async getWeather(location = 'punjab') {
+  static async getWeather(location = 'punjab', forceRefresh = false, customCoords = null) {
     try {
-      const response = await fetch(`${API_BASE}/weather?location=${encodeURIComponent(location)}`);
+      let url = `${API_BASE}/weather?location=${encodeURIComponent(location)}${forceRefresh ? '&refresh=true' : ''}`;
+      if (customCoords && customCoords.lat && customCoords.lon) {
+        url += `&lat=${customCoords.lat}&lon=${customCoords.lon}&name=${encodeURIComponent(customCoords.name || '')}&state=${encodeURIComponent(customCoords.state || '')}`;
+      }
+      const response = await fetch(url);
       const json = await response.json();
-      return json;
+      return typeof I18nService !== 'undefined' ? I18nService.translateOnlineData(json, 'weather') : json;
     } catch (error) {
       console.error('API Weather Error:', error);
       return null;
@@ -65,13 +78,18 @@ class ApiClient {
   }
 
   /**
-   * Fetch Categorized Recommendations
+   * Fetch Categorized Recommendations for ANY location in India
    */
-  static async getRecommendations(location = 'punjab') {
+  static async getRecommendations(location = 'punjab', forceRefresh = false, customCoords = null) {
     try {
-      const response = await fetch(`${API_BASE}/recommendations?location=${encodeURIComponent(location)}`);
+      let url = `${API_BASE}/recommendations?location=${encodeURIComponent(location)}${forceRefresh ? '&refresh=true' : ''}`;
+      if (customCoords && customCoords.lat && customCoords.lon) {
+        url += `&lat=${customCoords.lat}&lon=${customCoords.lon}&name=${encodeURIComponent(customCoords.name || '')}&state=${encodeURIComponent(customCoords.state || '')}`;
+      }
+      const response = await fetch(url);
       const json = await response.json();
-      return json.data || [];
+      const data = json.data || [];
+      return typeof I18nService !== 'undefined' ? I18nService.translateOnlineData(data, 'recommendations') : data;
     } catch (error) {
       console.error('API Recommendations Error:', error);
       return [];
@@ -79,13 +97,43 @@ class ApiClient {
   }
 
   /**
-   * Fetch Helplines Directory
+   * Search ANY district, city, or village across India
    */
-  static async getHelplines() {
+  static async searchLocations(query = '') {
     try {
-      const response = await fetch(`${API_BASE}/helplines`);
+      const response = await fetch(`${API_BASE}/locations/search?q=${encodeURIComponent(query)}`);
       const json = await response.json();
       return json.data || [];
+    } catch (error) {
+      console.error('API Location Search Error:', error);
+      return [];
+    }
+  }
+
+  /**
+   * Get all 28 states and 8 union territories of India
+   */
+  static async getAllLocations() {
+    try {
+      const response = await fetch(`${API_BASE}/locations/all`);
+      const json = await response.json();
+      return json.data || [];
+    } catch (error) {
+      console.error('API All Locations Error:', error);
+      return [];
+    }
+  }
+
+  /**
+   * Fetch Helplines Directory
+   */
+  static async getHelplines(forceRefresh = false) {
+    try {
+      const url = `${API_BASE}/helplines${forceRefresh ? '?refresh=true' : ''}`;
+      const response = await fetch(url);
+      const json = await response.json();
+      const data = json.data || [];
+      return typeof I18nService !== 'undefined' ? I18nService.translateOnlineData(data, 'helplines') : data;
     } catch (error) {
       console.error('API Helplines Error:', error);
       return [];
@@ -95,11 +143,13 @@ class ApiClient {
   /**
    * Fetch Crop Insurance Schemes
    */
-  static async getInsuranceSchemes() {
+  static async getInsuranceSchemes(forceRefresh = false) {
     try {
-      const response = await fetch(`${API_BASE}/insurance`);
+      const url = `${API_BASE}/insurance${forceRefresh ? '?refresh=true' : ''}`;
+      const response = await fetch(url);
       const json = await response.json();
-      return json.data || [];
+      const data = json.data || [];
+      return typeof I18nService !== 'undefined' ? I18nService.translateOnlineData(data, 'insurance') : data;
     } catch (error) {
       console.error('API Insurance Error:', error);
       return [];
@@ -107,16 +157,66 @@ class ApiClient {
   }
 
   /**
-   * Fetch Awareness Events
+   * Fetch Awareness Workshops
    */
-  static async getEvents() {
+  static async getAwarenessEvents(forceRefresh = false) {
     try {
-      const response = await fetch(`${API_BASE}/awareness`);
+      const url = `${API_BASE}/awareness${forceRefresh ? '?refresh=true' : ''}`;
+      const response = await fetch(url);
       const json = await response.json();
-      return json.data || [];
+      const data = json.data || [];
+      return typeof I18nService !== 'undefined' ? I18nService.translateOnlineData(data, 'awareness') : data;
     } catch (error) {
       console.error('API Awareness Error:', error);
       return [];
+    }
+  }
+
+  /**
+   * Fetch Awareness Events
+   */
+  static async getEvents(forceRefresh = false) {
+    try {
+      const url = `${API_BASE}/awareness${forceRefresh ? '?refresh=true' : ''}`;
+      const response = await fetch(url);
+      const json = await response.json();
+      const data = json.data || [];
+      return typeof I18nService !== 'undefined' ? I18nService.translateOnlineData(data, 'awareness') : data;
+    } catch (error) {
+      console.error('API Awareness Error:', error);
+      return [];
+    }
+  }
+
+  /**
+   * Fetch all dynamically synchronized data across modules
+   */
+  static async getAllSyncedData(location = 'punjab') {
+    try {
+      const response = await fetch(`${API_BASE}/sync/all?location=${encodeURIComponent(location)}`);
+      const json = await response.json();
+      return json;
+    } catch (error) {
+      console.error('API Sync All Error:', error);
+      return null;
+    }
+  }
+
+  /**
+   * Trigger immediate online re-fetch & AI dynamic re-calculation
+   */
+  static async triggerOnlineSync(location = 'punjab') {
+    try {
+      const response = await fetch(`${API_BASE}/sync/refresh`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ location })
+      });
+      const json = await response.json();
+      return json;
+    } catch (error) {
+      console.error('API Sync Trigger Error:', error);
+      return null;
     }
   }
 
@@ -127,7 +227,8 @@ class ApiClient {
     try {
       const response = await fetch(`${API_BASE}/privacy`);
       const json = await response.json();
-      return json.policy || null;
+      const policy = json.policy || null;
+      return (policy && typeof I18nService !== 'undefined') ? I18nService.translateOnlineData(policy, 'privacy') : policy;
     } catch (error) {
       console.error('API Privacy Error:', error);
       return null;
