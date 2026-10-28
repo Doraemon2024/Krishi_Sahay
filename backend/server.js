@@ -33,16 +33,22 @@ app.use(cors());
 app.use(express.json({ limit: '20mb' }));
 app.use(express.urlencoded({ extended: true, limit: '20mb' }));
 
-// Ensure upload & sample directories exist
-const uploadsDir = path.join(__dirname, 'uploads');
-if (!fs.existsSync(uploadsDir)) {
-  fs.mkdirSync(uploadsDir, { recursive: true });
+// Ensure upload & sample directories exist safely
+const uploadsDir = process.env.VERCEL ? '/tmp/uploads' : path.join(__dirname, 'uploads');
+try {
+  if (!fs.existsSync(uploadsDir)) {
+    fs.mkdirSync(uploadsDir, { recursive: true });
+  }
+} catch (e) {
+  console.warn('Notice: uploads directory setup:', e.message);
 }
 
 const samplesDir = path.join(__dirname, '../frontend/samples');
-if (!fs.existsSync(samplesDir)) {
-  fs.mkdirSync(samplesDir, { recursive: true });
-}
+try {
+  if (!fs.existsSync(samplesDir)) {
+    fs.mkdirSync(samplesDir, { recursive: true });
+  }
+} catch (e) {}
 
 // Serve Static Directories
 app.use('/uploads', express.static(uploadsDir));
@@ -105,10 +111,14 @@ app.get('*', (req, res) => {
 // Centralized Express Error Handler
 app.use(errorHandler);
 
-// Start Express Server
-app.listen(PORT, () => {
-  console.log(`==================================================`);
-  console.log(`🌾 KrishiSahay AgriTech Express Server Running!`);
-  console.log(`📡 URL: http://localhost:${PORT}`);
-  console.log(`==================================================`);
-});
+// Start Express Server only when executed directly
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`==================================================`);
+    console.log(`🌾 KrishiSahay AgriTech Express Server Running!`);
+    console.log(`📡 URL: http://localhost:${PORT}`);
+    console.log(`==================================================`);
+  });
+}
+
+module.exports = app;
