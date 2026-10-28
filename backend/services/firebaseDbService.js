@@ -279,13 +279,14 @@ class FirebaseDbService {
 
   async updateFarmer(id, updates) {
     const farmers = this.getFarmers();
-    const idx = farmers.findIndex(f => f.id === id);
+    const idx = farmers.findIndex(f => f.id === id || f.kisanId === id || f.phone === id);
     if (idx === -1) return null;
 
+    const targetId = farmers[idx].id;
     const updated = {
       ...farmers[idx],
       ...updates,
-      id: farmers[idx].id, // protect immutable id
+      id: targetId, // protect immutable id
       updatedAt: new Date().toISOString()
     };
 
@@ -295,8 +296,8 @@ class FirebaseDbService {
     const db = firebaseConfig.getDb();
     if (db && firebaseConfig.isLiveCloud()) {
       try {
-        await db.collection('farmers').doc(id).set(updated, { merge: true });
-        console.log(`🔥 [Firestore] Farmer profile updated in 'farmers' collection: ${id}`);
+        await db.collection('farmers').doc(targetId).set(updated, { merge: true });
+        console.log(`🔥 [Firestore] Farmer profile updated in 'farmers' collection: ${targetId}`);
       } catch (err) {
         console.warn(`⚠️ [Firestore] Failed to update farmer in Cloud Firestore: ${err.message}`);
       }

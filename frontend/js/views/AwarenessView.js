@@ -33,7 +33,7 @@ async function renderAwarenessView() {
 
         <div style="max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--space-6);">
           ${events.map(ev => `
-            <div class="card" style="display: flex; gap: var(--space-6); flex-direction: column; @media(min-width: 768px){flex-direction: row;} border: 1px solid rgba(27,77,62,0.1);">
+            <div class="card awareness-event-card">
               <div style="background-color: var(--secondary-green-light); border-radius: var(--radius-md); padding: var(--space-4) var(--space-6); text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; min-width: 150px;">
                 <div style="color: var(--primary-green); margin-bottom: 4px;">
                   ${svgIcons.calendar(28)}

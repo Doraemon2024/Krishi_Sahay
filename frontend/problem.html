@@ -120,8 +120,9 @@
         const healthJson = await healthRes.json();
         const report = healthJson.data || {};
 
-        // Fetch recommendations from /api/recommendations
-        const recRes = await fetch('/api/recommendations?location=punjab');
+        // Dynamic active location from storage
+        const activeLocation = localStorage.getItem('krishi_location') || 'punjab';
+        const recRes = await fetch(`/api/recommendations?location=${encodeURIComponent(activeLocation)}`);
         const recJson = await recRes.json();
         const recommendations = recJson.data || [];
 

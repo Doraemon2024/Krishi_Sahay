@@ -7,9 +7,6 @@ class ApiClient {
   /**
    * Submit leaf photo or sample ID for AI Diagnosis
    */
-  /**
-   * Submit leaf photo or sample ID for AI Diagnosis
-   */
   static async diagnoseCrop(formData) {
     try {
       const response = await fetch(`${API_BASE}/diagnose`, {

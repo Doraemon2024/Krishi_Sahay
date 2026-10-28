@@ -29,7 +29,7 @@ function resolveFarmerId(req) {
     }
     return token;
   }
-  return req.query.id || req.body.id || null;
+  return req.query.id || req.body.id || req.query.kisanId || req.body.kisanId || null;
 }
 
 /**
@@ -141,7 +141,7 @@ router.get('/profile', async (req, res) => {
 
     let farmer = null;
     if (farmerId) {
-      farmer = dbService.getFarmerById(farmerId);
+      farmer = dbService.getFarmerById(farmerId) || dbService.getFarmerByIdentifier(farmerId);
     }
 
     // Fallback to primary demo profile if not found or demo mode

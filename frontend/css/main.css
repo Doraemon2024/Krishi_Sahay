@@ -3210,7 +3210,26 @@ input[type="text"]:focus, input[type="search"]:focus {
   gap: 8px;
 }
 
-/* Print Styling for PVC Kisan Smart Card */
+/* Awareness Event Card Responsive Layout */
+.awareness-event-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  border: 1px solid rgba(27, 77, 62, 0.1);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+@media (min-width: 768px) {
+  .awareness-event-card {
+    flex-direction: row;
+  }
+}
+
+.awareness-event-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
 @media print {
   body * {
     visibility: hidden;

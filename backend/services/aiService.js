@@ -16,7 +16,15 @@ class AIService {
     let matchedDisease = null;
 
     if (sampleId && sampleId !== 'auto') {
-      matchedDisease = diseases.find(d => d.id === sampleId);
+      const aliasMap = {
+        'sample_rice': 'rice_blast',
+        'sample_tomato': 'tomato_early_blight',
+        'sample_wheat': 'wheat_yellow_rust',
+        'sample_healthy': 'healthy_crop',
+        'sample_cotton': 'cotton_bacterial_blight'
+      };
+      const normalizedId = aliasMap[sampleId] || sampleId;
+      matchedDisease = diseases.find(d => d.id === normalizedId);
     }
 
     if (!matchedDisease) {

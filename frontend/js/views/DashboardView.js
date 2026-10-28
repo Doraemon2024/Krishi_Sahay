@@ -241,7 +241,7 @@ async function renderDashboardView() {
 
               <!-- 4 Benchmark Sample Cards -->
               <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; max-width: 820px; margin: 0 auto 20px; text-align: left;">
-                <button class="btn-quick-sample card" data-sample="sample_rice" style="cursor: pointer; padding: 12px; border: 1px solid var(--border-subtle); display: flex; align-items: center; gap: 12px; background: var(--bg-surface);">
+                <button class="btn-quick-sample card" data-sample="rice_blast" style="cursor: pointer; padding: 12px; border: 1px solid var(--border-subtle); display: flex; align-items: center; gap: 12px; background: var(--bg-surface);">
                   <img src="/samples/rice_blast.jpg" alt="Rice Blast" style="width: 52px; height: 52px; object-fit: cover; border-radius: var(--radius-sm);">
                   <div>
                     <strong style="font-size: 0.85rem; color: var(--primary-green); display: block;">Rice Blast</strong>
@@ -249,7 +249,7 @@ async function renderDashboardView() {
                   </div>
                 </button>
 
-                <button class="btn-quick-sample card" data-sample="sample_tomato" style="cursor: pointer; padding: 12px; border: 1px solid var(--border-subtle); display: flex; align-items: center; gap: 12px; background: var(--bg-surface);">
+                <button class="btn-quick-sample card" data-sample="tomato_early_blight" style="cursor: pointer; padding: 12px; border: 1px solid var(--border-subtle); display: flex; align-items: center; gap: 12px; background: var(--bg-surface);">
                   <img src="/samples/tomato_blight.jpg" alt="Tomato Early Blight" style="width: 52px; height: 52px; object-fit: cover; border-radius: var(--radius-sm);">
                   <div>
                     <strong style="font-size: 0.85rem; color: var(--primary-green); display: block;">Tomato Early Blight</strong>
@@ -257,7 +257,7 @@ async function renderDashboardView() {
                   </div>
                 </button>
 
-                <button class="btn-quick-sample card" data-sample="sample_wheat" style="cursor: pointer; padding: 12px; border: 1px solid var(--border-subtle); display: flex; align-items: center; gap: 12px; background: var(--bg-surface);">
+                <button class="btn-quick-sample card" data-sample="wheat_yellow_rust" style="cursor: pointer; padding: 12px; border: 1px solid var(--border-subtle); display: flex; align-items: center; gap: 12px; background: var(--bg-surface);">
                   <img src="/samples/wheat_rust.jpg" alt="Wheat Rust" style="width: 52px; height: 52px; object-fit: cover; border-radius: var(--radius-sm);">
                   <div>
                     <strong style="font-size: 0.85rem; color: var(--primary-green); display: block;">Wheat Rust</strong>
@@ -265,7 +265,7 @@ async function renderDashboardView() {
                   </div>
                 </button>
 
-                <button class="btn-quick-sample card" data-sample="sample_healthy" style="cursor: pointer; padding: 12px; border: 1px solid var(--border-subtle); display: flex; align-items: center; gap: 12px; background: var(--bg-surface);">
+                <button class="btn-quick-sample card" data-sample="healthy_crop" style="cursor: pointer; padding: 12px; border: 1px solid var(--border-subtle); display: flex; align-items: center; gap: 12px; background: var(--bg-surface);">
                   <img src="/samples/healthy_leaf.jpg" alt="Healthy Leaf" style="width: 52px; height: 52px; object-fit: cover; border-radius: var(--radius-sm);">
                   <div>
                     <strong style="font-size: 0.85rem; color: var(--primary-green); display: block;">Healthy Crop Leaf</strong>
