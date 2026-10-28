@@ -40,42 +40,59 @@ async function renderAwarenessView() {
                 </div>
                 <div style="font-size: 1.1rem; font-weight: 800; color: var(--primary-green);">${ev.date}</div>
                 <div style="font-size: 0.75rem; font-weight: 600; color: var(--text-secondary); margin-top: 2px;">${ev.time}</div>
-                ${ev.seatsLeft ? `<div style="font-size: 0.7rem; color: var(--accent-gold); font-weight: 700; margin-top: 4px;">⚡ ${ev.seatsLeft}</div>` : ''}
+                ${ev.status ? `<div style="font-size: 0.725rem; color: var(--primary-green); font-weight: 700; margin-top: 6px; background: rgba(27,77,62,0.12); padding: 2px 6px; border-radius: var(--radius-sm);">${ev.status}</div>` : ''}
               </div>
 
               <div style="flex: 1;">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-2); flex-wrap: wrap; gap: var(--space-2);">
                   <div style="display: flex; gap: 6px; align-items: center;">
                     <span class="badge badge-info">${ev.category}</span>
-                    <span class="badge badge-low">${ev.liveStatus || '🟢 Registration Live'}</span>
+                    <span class="badge badge-low" style="background-color: #E0F2FE; color: #0369A1;">🏛️ Verified MoA&FW / ICAR</span>
                   </div>
                   <span class="badge badge-low" style="background-color: #DCFCE7; color: #15803D;">${ev.registrationFee}</span>
                 </div>
 
                 <h3 style="font-size: 1.3rem; font-weight: 800; color: var(--primary-green); margin-bottom: var(--space-2);">${ev.title}</h3>
                 
-                <p style="font-size: 0.925rem; color: var(--text-secondary); margin-bottom: var(--space-4); line-height: 1.6;">${ev.description}</p>
+                <p style="font-size: 0.925rem; color: var(--text-secondary); margin-bottom: var(--space-3); line-height: 1.6;">${ev.description}</p>
 
-                <div style="font-size: 0.85rem; color: var(--text-secondary); display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-4);">
-                  ${svgIcons.mapPin(16, 'color: var(--primary-green);')}
-                  <span><strong>${t('location', 'Location')}:</strong> ${ev.location}</span>
+                ${ev.targetCrops ? `
+                  <div style="margin-bottom: var(--space-3); display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+                    <span style="font-size: 0.75rem; font-weight: 700; color: var(--text-light); text-transform: uppercase;">Target Crops:</span>
+                    <span class="badge badge-low" style="font-size: 0.75rem;">${ev.targetCrops}</span>
+                  </div>
+                ` : ''}
+
+                <div style="font-size: 0.85rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 4px; margin-bottom: var(--space-4);">
+                  <div style="display: flex; align-items: center; gap: var(--space-2);">
+                    ${svgIcons.mapPin(16, 'color: var(--primary-green);')}
+                    <span><strong>${t('location', 'Location')}:</strong> ${ev.location}</span>
+                  </div>
+                  ${ev.nodalOfficer ? `
+                    <div style="display: flex; align-items: center; gap: var(--space-2); font-size: 0.8rem; color: var(--text-light);">
+                      <span>🏛️ <strong>Nodal Division:</strong> ${ev.nodalOfficer}</span>
+                    </div>
+                  ` : ''}
                 </div>
 
                 <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-3); padding-top: var(--space-3); border-top: 1px solid rgba(27,77,62,0.08);">
-                  <span style="font-size: 0.8rem; font-weight: 600; color: var(--text-light);">${t('organizer', 'Organizer:')} ${ev.organizer}</span>
+                  <div style="display: flex; flex-direction: column;">
+                    <span style="font-size: 0.8rem; font-weight: 700; color: var(--primary-green);">${ev.organizer}</span>
+                    <span style="font-size: 0.725rem; color: var(--text-light);">Helpline: ${ev.helpline || '1800-180-1551'}</span>
+                  </div>
                   
-                  <div style="display: flex; gap: var(--space-2);">
-                    ${ev.virtualLink ? `
-                      <a href="${ev.virtualLink}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+                    ${ev.officialPortalUrl ? `
+                      <a href="${ev.officialPortalUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="Visit Official Ministry / ICAR Portal" style="font-size: 0.775rem;">
                         ${svgIcons.externalLink(14)}
-                        <span>${t('join_live_webinar', 'Join Live Webinar')}</span>
+                        <span>Official Portal</span>
                       </a>
                     ` : ''}
 
-                    <button class="btn btn-primary btn-sm register-event-btn" data-title="${ev.title}">
+                    <a href="${ev.registrationUrl || 'https://kvk.icar.gov.in/'}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm register-event-btn" data-title="${ev.title}">
                       ${svgIcons.check(16)}
-                      <span>${t('register_online_free', 'Register Online Free')}</span>
-                    </button>
+                      <span>${t('register_online_free', 'Register on Portal')}</span>
+                    </a>
                   </div>
                 </div>
               </div>

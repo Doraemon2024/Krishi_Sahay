@@ -18,6 +18,7 @@ const insuranceRoutes = require('./routes/insuranceRoutes');
 const awarenessRoutes = require('./routes/awarenessRoutes');
 const privacyRoutes = require('./routes/privacyRoutes');
 const syncRoutes = require('./routes/syncRoutes');
+const authRoutes = require('./routes/authRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -56,6 +57,7 @@ app.use('/api', insuranceRoutes);
 app.use('/api', awarenessRoutes);
 app.use('/api', privacyRoutes);
 app.use('/api', syncRoutes);
+app.use('/api/auth', authRoutes);
 
 // Health Check API
 app.get('/api/health', (req, res) => {
@@ -66,6 +68,25 @@ app.get('/api/health', (req, res) => {
     environment: process.env.NODE_ENV || 'development',
     timestamp: new Date().toISOString()
   });
+});
+
+// Firebase Database Status API
+app.get('/api/firebase/status', (req, res) => {
+  try {
+    const dbService = require('./services/dbService');
+    const status = dbService.getFirebaseStatus();
+    res.status(200).json({
+      success: true,
+      message: 'Firebase Database System Status',
+      data: status
+    });
+  } catch (err) {
+    res.status(500).json({
+      success: false,
+      message: 'Failed to retrieve Firebase status',
+      error: err.message
+    });
+  }
 });
 
 // API 404 Handler

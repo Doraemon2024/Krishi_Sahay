@@ -1,83 +1,42 @@
-const fs = require('fs');
-const path = require('path');
-
-const DATA_DIR = path.join(__dirname, '../data');
-
-const getFilePath = (filename) => path.join(DATA_DIR, filename);
+const firebaseDbService = require('./firebaseDbService');
 
 /**
- * Safely reads JSON file
+ * KrishiSahay Central Database Service
+ * Powered by Google Cloud Firestore with High-Availability Local Cache
  */
-function readJson(filename) {
-  try {
-    const filePath = getFilePath(filename);
-    if (!fs.existsSync(filePath)) {
-      return [];
-    }
-    const data = fs.readFileSync(filePath, 'utf8');
-    return JSON.parse(data);
-  } catch (error) {
-    console.error(`Error reading ${filename}:`, error);
-    return [];
-  }
-}
-
-/**
- * Safely writes JSON file
- */
-function writeJson(filename, data) {
-  try {
-    const filePath = getFilePath(filename);
-    fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf8');
-    return true;
-  } catch (error) {
-    console.error(`Error writing ${filename}:`, error);
-    return false;
-  }
-}
-
 module.exports = {
+  // Engine & Firebase Status
+  getFirebaseStatus: () => firebaseDbService.getSystemStatus(),
+
   // Diseases
-  getDiseases: () => readJson('diseases.json'),
-  getDiseaseById: (id) => {
-    const diseases = readJson('diseases.json');
-    return diseases.find(d => d.id === id) || null;
-  },
+  getDiseases: () => firebaseDbService.getDiseases(),
+  getDiseaseById: (id) => firebaseDbService.getDiseaseById(id),
+  getDiseasesFromFirestore: () => firebaseDbService.getDiseasesFromFirestore(),
 
   // Weather Data
-  getWeatherData: () => readJson('weatherData.json'),
-  getWeatherByRegion: (regionId) => {
-    const weatherObj = readJson('weatherData.json');
-    const regions = weatherObj.regions || [];
-    return regions.find(r => r.id.toLowerCase() === (regionId || '').toLowerCase()) || regions[0] || null;
-  },
+  getWeatherData: () => firebaseDbService.getWeatherData(),
+  getWeatherByRegion: (regionId) => firebaseDbService.getWeatherByRegion(regionId),
 
-  // Diagnoses History
-  getDiagnosesHistory: () => {
-    const list = readJson('diagnosesHistory.json');
-    return Array.isArray(list) ? list : [];
-  },
-  getDiagnosisById: (id) => {
-    const list = readJson('diagnosesHistory.json');
-    return list.find(item => item.id === id) || null;
-  },
-  saveDiagnosis: (diagnosisRecord) => {
-    const history = readJson('diagnosesHistory.json') || [];
-    history.unshift(diagnosisRecord); // Newest first
-    writeJson('diagnosesHistory.json', history);
-    return diagnosisRecord;
-  },
-  clearDiagnosesHistory: () => {
-    writeJson('diagnosesHistory.json', []);
-    return true;
-  },
+  // Diagnoses History (Cloud Firestore 'diagnoses' collection)
+  getDiagnosesHistory: () => firebaseDbService.getDiagnosesHistory(),
+  getDiagnosesHistoryFromFirestore: () => firebaseDbService.getDiagnosesHistoryFromFirestore(),
+  getDiagnosisById: (id) => firebaseDbService.getDiagnosisById(id),
+  saveDiagnosis: (diagnosisRecord) => firebaseDbService.saveDiagnosis(diagnosisRecord),
+  clearDiagnosesHistory: () => firebaseDbService.clearDiagnosesHistory(),
 
-  // Helplines
-  getHelplines: () => readJson('helplines.json'),
+  // Helplines (Cloud Firestore 'helplines' collection)
+  getHelplines: () => firebaseDbService.getHelplines(),
 
-  // Insurance
-  getInsuranceSchemes: () => readJson('insurance.json'),
+  // Insurance (Cloud Firestore 'insurance' collection)
+  getInsuranceSchemes: () => firebaseDbService.getInsuranceSchemes(),
 
-  // Events & Awareness
-  getEvents: () => readJson('events.json')
+  // Events & Awareness (Cloud Firestore 'events' collection)
+  getEvents: () => firebaseDbService.getEvents(),
+
+  // Farmer Profiles & Authentication (Cloud Firestore 'farmers' collection)
+  getFarmers: () => firebaseDbService.getFarmers(),
+  getFarmerById: (id) => firebaseDbService.getFarmerById(id),
+  getFarmerByIdentifier: (identifier) => firebaseDbService.getFarmerByIdentifier(identifier),
+  createFarmer: (farmerData) => firebaseDbService.createFarmer(farmerData),
+  updateFarmer: (id, updates) => firebaseDbService.updateFarmer(id, updates)
 };

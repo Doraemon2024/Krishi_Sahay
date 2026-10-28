@@ -1,0 +1,65 @@
+[
+  {
+    "id": "farmer_demo_1",
+    "name": "Ramesh Kumar Patel",
+    "phone": "9876543210",
+    "email": "ramesh.patel@krishisahay.org",
+    "password": "password123",
+    "kisanId": "KA-2026-88914",
+    "state": "Punjab",
+    "district": "Ludhiana",
+    "village": "Sahnewal",
+    "landAcreage": 7,
+    "primaryCrops": [
+      "Rice (Paddy)",
+      "Wheat",
+      "Mustard"
+    ],
+    "soilType": "Alluvial Loam",
+    "irrigationType": "Canal & Solar Drip Irrigation",
+    "createdAt": "2026-01-15T08:30:00Z",
+    "updatedAt": "2026-10-28T18:30:54.242Z"
+  },
+  {
+    "id": "farmer_demo_2",
+    "name": "Sunita Devi",
+    "phone": "9811223344",
+    "email": "sunita.devi@krishisahay.org",
+    "password": "password123",
+    "kisanId": "MH-2026-44129",
+    "state": "Maharashtra",
+    "district": "Nashik",
+    "village": "Niphad",
+    "landAcreage": 4,
+    "primaryCrops": [
+      "Onion",
+      "Tomato",
+      "Soybean"
+    ],
+    "soilType": "Black Cotton Soil (Regur)",
+    "irrigationType": "Drip Irrigation & Farm Pond",
+    "createdAt": "2026-02-10T10:15:00Z",
+    "updatedAt": "2026-10-28T18:00:00.000Z"
+  },
+  {
+    "id": "farmer_demo_3",
+    "name": "Venkatesh Rao",
+    "phone": "9848012345",
+    "email": "venkatesh.rao@krishisahay.org",
+    "password": "password123",
+    "kisanId": "AP-2026-92815",
+    "state": "Andhra Pradesh",
+    "district": "Guntur",
+    "village": "Tenali",
+    "landAcreage": 5.5,
+    "primaryCrops": [
+      "Chilli",
+      "Cotton",
+      "Rice (Paddy)"
+    ],
+    "soilType": "Red Sandy Loam",
+    "irrigationType": "Borewell & Micro Sprinklers",
+    "createdAt": "2026-03-05T09:00:00Z",
+    "updatedAt": "2026-10-28T18:00:00.000Z"
+  }
+]

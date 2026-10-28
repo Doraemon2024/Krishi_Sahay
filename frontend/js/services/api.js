@@ -260,4 +260,136 @@ class ApiClient {
       throw error;
     }
   }
+
+  /**
+   * Fetch Firebase Firestore database system status
+   */
+  static async getFirebaseStatus() {
+    try {
+      const response = await fetch(`${API_BASE}/firebase/status`);
+      const json = await response.json();
+      return json.data || null;
+    } catch (error) {
+      console.error('API Firebase Status Error:', error);
+      return null;
+    }
+  }
+
+  // ========================================================
+  // Farmer Authentication & Profile Management
+  // ========================================================
+  static getCurrentUser() {
+    try {
+      const stored = localStorage.getItem('ks_farmer_profile');
+      return stored ? JSON.parse(stored) : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  static getAuthToken() {
+    return localStorage.getItem('ks_farmer_token') || null;
+  }
+
+  static setCurrentUser(farmer, token) {
+    if (farmer) localStorage.setItem('ks_farmer_profile', JSON.stringify(farmer));
+    if (token) localStorage.setItem('ks_farmer_token', token);
+    window.dispatchEvent(new CustomEvent('ks_auth_changed', { detail: { farmer } }));
+  }
+
+  static clearCurrentUser() {
+    localStorage.removeItem('ks_farmer_profile');
+    localStorage.removeItem('ks_farmer_token');
+    window.dispatchEvent(new CustomEvent('ks_auth_changed', { detail: { farmer: null } }));
+  }
+
+  static async login(credentials) {
+    try {
+      const response = await fetch(`${API_BASE}/auth/login`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(credentials)
+      });
+      const json = await response.json();
+      if (!response.ok || !json.success) {
+        throw new Error(json.message || 'Login failed. Please verify credentials.');
+      }
+      this.setCurrentUser(json.farmer, json.token);
+      return json;
+    } catch (error) {
+      console.error('API Login Error:', error);
+      throw error;
+    }
+  }
+
+  static async register(farmerData) {
+    try {
+      const response = await fetch(`${API_BASE}/auth/register`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(farmerData)
+      });
+      const json = await response.json();
+      if (!response.ok || !json.success) {
+        throw new Error(json.message || 'Registration failed.');
+      }
+      this.setCurrentUser(json.farmer, json.token);
+      return json;
+    } catch (error) {
+      console.error('API Register Error:', error);
+      throw error;
+    }
+  }
+
+  static async getProfile() {
+    try {
+      const token = this.getAuthToken();
+      const headers = token ? { 'Authorization': `Bearer ${token}` } : {};
+      const response = await fetch(`${API_BASE}/auth/profile`, { headers });
+      const json = await response.json();
+      if (json.success && json.farmer) {
+        // Update local cache
+        localStorage.setItem('ks_farmer_profile', JSON.stringify(json.farmer));
+        return json.farmer;
+      }
+      return null;
+    } catch (error) {
+      console.error('API Profile Error:', error);
+      return this.getCurrentUser();
+    }
+  }
+
+  static async updateProfile(updates) {
+    try {
+      const token = this.getAuthToken();
+      const headers = {
+        'Content-Type': 'application/json',
+        ...(token ? { 'Authorization': `Bearer ${token}` } : {})
+      };
+      const response = await fetch(`${API_BASE}/auth/profile`, {
+        method: 'PUT',
+        headers,
+        body: JSON.stringify(updates)
+      });
+      const json = await response.json();
+      if (!response.ok || !json.success) {
+        throw new Error(json.message || 'Profile update failed.');
+      }
+      this.setCurrentUser(json.farmer, token);
+      return json;
+    } catch (error) {
+      console.error('API Update Profile Error:', error);
+      throw error;
+    }
+  }
+
+  static async logout() {
+    try {
+      await fetch(`${API_BASE}/auth/logout`, { method: 'POST' });
+    } catch (e) {
+      // ignore
+    } finally {
+      this.clearCurrentUser();
+    }
+  }
 }

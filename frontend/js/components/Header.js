@@ -21,8 +21,11 @@ function renderHeader(activeTab = 'home') {
     { id: 'helplines', label: t('nav_helplines', 'Helplines'), icon: 'phone' },
     { id: 'insurance', label: t('nav_insurance', 'Insurance'), icon: 'shield' },
     { id: 'awareness', label: t('nav_awareness', 'Awareness'), icon: 'calendar' },
+    { id: 'profile', label: t('nav_profile', 'Profile'), icon: 'user' },
     { id: 'privacy', label: t('nav_privacy', 'Privacy'), icon: 'lock' }
   ];
+
+  const currentUser = typeof ApiClient !== 'undefined' ? ApiClient.getCurrentUser() : null;
 
   const currentLocation = localStorage.getItem('krishi_location') || 'punjab';
   const customCoordsStr = localStorage.getItem('krishi_custom_coords');
@@ -165,6 +168,22 @@ function renderHeader(activeTab = 'home') {
               ${svgIcons.volume2(15)}
             </button>
           </div>
+
+          <!-- Farmer Profile Column / Authentication Pill -->
+          ${currentUser ? `
+            <a href="#profile" class="farmer-profile-pill ${activeTab === 'profile' ? 'active' : ''}" title="Kisan ID: ${currentUser.kisanId || 'Verified'} | ${currentUser.name}" aria-label="Farmer Profile">
+              <div class="farmer-avatar-badge">${(currentUser.name || 'K').trim().charAt(0).toUpperCase()}</div>
+              <div class="farmer-info-col">
+                <span class="farmer-name-text">${currentUser.name || 'Farmer'}</span>
+                <span class="farmer-meta-text">🌾 ${currentUser.district ? currentUser.district + ', ' : ''}${currentUser.state || 'India'}</span>
+              </div>
+            </a>
+          ` : `
+            <a href="#login" class="farmer-login-btn ${activeTab === 'login' ? 'active' : ''}" title="Sign In or Register Farmer Profile">
+              ${svgIcons.user(15)}
+              <span>${t('nav_login', 'Farmer Sign In')}</span>
+            </a>
+          `}
           
           <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Open Navigation Menu">
             ${svgIcons.menu(24)}
@@ -189,7 +208,7 @@ function renderHeader(activeTab = 'home') {
         </div>
 
         <!-- Mobile Language Selector -->
-        <div style="padding: 12px 16px; background-color: var(--bg-surface-secondary); border-radius: var(--radius-md); margin-bottom: var(--space-4); display: flex; align-items: center; justify-content: space-between;">
+        <div style="padding: 12px 16px; background-color: var(--bg-surface-secondary); border-radius: var(--radius-md); margin-bottom: var(--space-3); display: flex; align-items: center; justify-content: space-between;">
           <div style="display: flex; align-items: center; gap: 8px;">
             ${svgIcons.globe(18, 'color: var(--primary-green);')}
             <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary-green);">Language / భాష:</span>
@@ -200,6 +219,25 @@ function renderHeader(activeTab = 'home') {
             `).join('')}
           </select>
         </div>
+
+        <!-- Mobile Farmer Account Header Pill -->
+        ${currentUser ? `
+          <div style="padding: 10px 14px; background: rgba(27,77,62,0.08); border-radius: var(--radius-md); margin-bottom: var(--space-4); display: flex; align-items: center; justify-content: space-between;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <div class="farmer-avatar-badge">${(currentUser.name || 'K').trim().charAt(0).toUpperCase()}</div>
+              <div>
+                <strong style="font-size: 0.85rem; color: var(--primary-green); display: block;">${currentUser.name}</strong>
+                <span style="font-size: 0.725rem; color: var(--text-secondary);">${currentUser.kisanId || 'Kisan ID'}</span>
+              </div>
+            </div>
+            <a href="#profile" class="btn btn-secondary btn-sm" style="font-size: 0.75rem; padding: 4px 10px;">My Profile</a>
+          </div>
+        ` : `
+          <div style="padding: 10px 14px; background: rgba(27,77,62,0.08); border-radius: var(--radius-md); margin-bottom: var(--space-4); display: flex; align-items: center; justify-content: space-between;">
+            <span style="font-size: 0.85rem; color: var(--text-secondary); font-weight: 600;">Farmer Profile</span>
+            <a href="#login" class="btn btn-primary btn-sm" style="font-size: 0.75rem; padding: 4px 12px;">Sign In</a>
+          </div>
+        `}
 
         <ul class="mobile-nav-list">
           ${navItems.map(item => `

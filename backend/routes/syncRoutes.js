@@ -47,14 +47,46 @@ router.post('/sync/refresh', async (req, res) => {
  * GET /api/sync/status
  * Returns current sync status and timestamp
  */
-router.get('/sync/status', (req, res) => {
-  return res.status(200).json({
-    status: 'ONLINE',
-    isLiveOnline: true,
-    lastSyncedAt: aiOnlineSyncService.cache.lastSyncedAt || new Date().toISOString(),
-    source: 'Open-Meteo & IMD Live Agricultural Weather Mesh',
-    refreshInterval: '5 minutes (Auto-sync background daemon active)'
-  });
+/**
+ * GET /api/sync/locations
+ * Returns list of all 36 Indian states and union territories
+ */
+router.get('/sync/locations', (req, res) => {
+  try {
+    const locations = aiOnlineSyncService.getAllLocations();
+    return res.status(200).json({
+      success: true,
+      count: locations.length,
+      data: locations
+    });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: 'Failed to retrieve locations list'
+    });
+  }
+});
+
+/**
+ * GET /api/sync/search?q=...
+ * Search ANY district, city, or farm location
+ */
+router.get('/sync/search', async (req, res) => {
+  try {
+    const { q } = req.query;
+    const results = await aiOnlineSyncService.searchLocations(q || '');
+    return res.status(200).json({
+      success: true,
+      query: q || '',
+      count: results.length,
+      data: results
+    });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: 'Location search error'
+    });
+  }
 });
 
 module.exports = router;

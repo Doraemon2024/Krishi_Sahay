@@ -15,13 +15,19 @@ const routes = {
   'helplines': { render: renderHelplinesView, init: initHelplinesListeners },
   'insurance': { render: renderInsuranceView, init: initInsuranceListeners },
   'awareness': { render: renderAwarenessView, init: initAwarenessListeners },
-  'privacy': { render: renderPrivacyView, init: initPrivacyListeners }
+  'privacy': { render: renderPrivacyView, init: initPrivacyListeners },
+  'login': { render: () => LoginView.render(), init: () => LoginView.attachEvents() },
+  'profile': { render: () => ProfileView.render(), init: () => ProfileView.attachEvents() }
 };
 
 let autoSyncInterval = null;
 
 async function initRouter() {
   window.addEventListener('hashchange', handleRoute);
+  window.addEventListener('ks_auth_changed', () => {
+    handleRoute();
+  });
+  window.App = { router: handleRoute };
   handleRoute();
   startBackgroundAutoSync();
 

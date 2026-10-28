@@ -1,162 +1,12 @@
 [
   {
-    "id": "diag_1793045924145_157",
-    "crop": "Rice (Paddy)",
-    "disease": "Rice Blast (Magnaporthe oryzae)",
-    "severity": "HIGH",
-    "severityBadgeClass": "severity-high",
-    "confidence": 93.5,
-    "uploadedImage": "/samples/rice_blast.jpg",
-    "summary": "Fungal infection creating diamond-shaped lesions with grayish centers on rice leaves, causing severe yield reduction if untreated during tillering.",
-    "symptoms": [
-      "Spindle-shaped or diamond-shaped spots on leaves",
-      "Lesions with reddish-brown margins and gray or white centers",
-      "Yellowing around lesions causing leaf tip drying",
-      "Lesions on node and collar areas causing stem breakage"
-    ],
-    "treatments": [
-      {
-        "step": 1,
-        "title": "Immediate Fungicide Application",
-        "description": "Spray Tricyclazole 75% WP @ 0.6g/liter of water or Isoprothiolane 40% EC @ 1.5ml/liter of water thoroughly across affected field patches."
-      },
-      {
-        "step": 2,
-        "title": "Adjust Nitrogen Fertilizer Usage",
-        "description": "Temporarily suspend top-dressing of Urea nitrogen fertilizer. Excessive nitrogen promotes soft foliage that accelerates fungal spore germination."
-      },
-      {
-        "step": 3,
-        "title": "Drain Field Excess Water",
-        "description": "Drain stagnant water for 2-3 days to lower canopy relative humidity, then re-irrigate with clean fresh water."
-      },
-      {
-        "step": 4,
-        "title": "Organic Bio-Control Application",
-        "description": "Spray Pseudomonas fluorescens @ 10g/liter of water in the early morning as a bio-fungicidal follow-up 5 days after chemical spray."
-      }
-    ],
-    "warnings": [
-      "Do not apply systemic fungicide during rainfall or within 3 hours before expected rain.",
-      "Avoid spraying in hot mid-day sun to prevent leaf scorching."
-    ],
-    "prevention": [
-      "Use certified disease-resistant varieties such as Swarna Sub1 or PR 126",
-      "Treat seeds with Carbendazim @ 2g/kg seed before sowing",
-      "Maintain recommended plant spacing (20cm x 15cm) to ensure adequate airflow",
-      "Destroy field stubble and weed hosts around field bunds"
-    ],
-    "weatherAdvisory": {
-      "recommendation": "Spray recommended fungicide immediately within the next 24-36 hours.",
-      "actionTime": "Early Morning (6:00 AM - 9:00 AM) or Late Evening",
-      "humidityThreshold": "High (>85% relative humidity favors blast spore release)",
-      "idealTemp": "20°C - 28°C",
-      "sprayStatus": "SAFE_TO_SPRAY",
-      "sprayStatusText": "Good time to spray - Low rain probability for next 18 hours"
-    },
-    "timestamp": "2026-10-26T20:18:44.145Z",
-    "formattedDate": "27 Oct 2026, 01:48 am",
-    "location": "Gannavaram, Kistna (Andhra Pradesh)"
-  },
-  {
-    "id": "diag_1793045671253_432",
-    "crop": "General Crop",
-    "disease": "Healthy Crop - No Disease Detected",
-    "severity": "NONE",
-    "severityBadgeClass": "severity-low",
-    "confidence": 97.7,
-    "uploadedImage": "/samples/healthy_leaf.jpg",
-    "summary": "The leaf foliage shows bright uniform pigmentation, strong cell structural integrity, and no visible fungal or bacterial lesions.",
-    "symptoms": [
-      "Vibrant uniform green coloration across entire blade",
-      "Clean vein network without necrotic spots or yellow halos",
-      "Sturdy leaf tissue and healthy cuticle coating"
-    ],
-    "treatments": [
-      {
-        "step": 1,
-        "title": "Maintain Standard Agronomic Care",
-        "description": "Continue regular balanced irrigation schedule and soil moisture maintenance according to crop stage."
-      },
-      {
-        "step": 2,
-        "title": "Balanced Nutrient Management",
-        "description": "Apply recommended dosage of N-P-K based on soil testing report."
-      }
-    ],
-    "warnings": [],
-    "prevention": [
-      "Inspect field weekly for early pest/disease entry",
-      "Keep field bunds free from weed reservoirs",
-      "Maintain optimal soil bio-health with organic FYM compost"
-    ],
-    "weatherAdvisory": {
-      "recommendation": "No treatment necessary. Maintain standard routine irrigation.",
-      "actionTime": "As per normal schedule",
-      "humidityThreshold": "Normal",
-      "idealTemp": "Ambient",
-      "sprayStatus": "NO_ACTION_NEEDED",
-      "sprayStatusText": "Crop in excellent health - Keep up good practices!"
-    },
-    "timestamp": "2026-10-26T20:14:31.253Z",
-    "formattedDate": "27 Oct 2026, 01:44 am",
-    "location": "Ludhiana, Punjab"
-  },
-  {
-    "id": "diag_1793045670433_356",
-    "crop": "Cotton",
-    "disease": "Bacterial Blight / Angular Leaf Spot (Xanthomonas citri pv. malvacearum)",
-    "severity": "MEDIUM",
-    "severityBadgeClass": "severity-medium",
-    "confidence": 90.6,
-    "uploadedImage": "/samples/cotton_blight.jpg",
-    "summary": "Bacterial infection causing angular water-soaked lesions bounded by leaf veins, stem black arm, and boll rot.",
-    "symptoms": [
-      "Angular water-soaked spots bounded by small leaf veins",
-      "Lesions turn dark brown to black as tissue dries out",
-      "Dark lesions on stems ('Black Arm' phase) causing lodging",
-      "Sunken circular water-soaked lesions on cotton bolls"
-    ],
-    "treatments": [
-      {
-        "step": 1,
-        "title": "Bactericide & Copper Spray",
-        "description": "Spray Streptocycline @ 0.5g + Copper Oxychloride @ 2.5g per liter of water. Repeat spray after 12-15 days if rain persists."
-      },
-      {
-        "step": 2,
-        "title": "Foliar Micronutrient Support",
-        "description": "Mix 1% Potassium Nitrate (10g/L) to boost plant physiological defense during recovery."
-      }
-    ],
-    "warnings": [
-      "Do not use broad-spectrum organophosphate insecticides simultaneously with bactericides."
-    ],
-    "prevention": [
-      "Delint seeds using concentrated sulfuric acid before sowing",
-      "Treat seeds with Streptocycline (100 ppm) for 2 hours before sowing",
-      "Destroy infected crop residues post harvest"
-    ],
-    "weatherAdvisory": {
-      "recommendation": "Apply bactericide spray before forecasted rain showers.",
-      "actionTime": "Late Afternoon (4:00 PM - 6:30 PM)",
-      "humidityThreshold": ">75%",
-      "idealTemp": "28°C - 35°C",
-      "sprayStatus": "RECOMMENDED",
-      "sprayStatusText": "Spray before rain to protect foliage"
-    },
-    "timestamp": "2026-10-26T20:14:30.433Z",
-    "formattedDate": "27 Oct 2026, 01:44 am",
-    "location": "Ludhiana, Punjab"
-  },
-  {
-    "id": "diag_1793045669615_797",
+    "id": "diag_1793212252371_989",
     "crop": "Wheat",
     "disease": "Yellow Stripe Rust (Puccinia striiformis)",
     "severity": "HIGH",
     "severityBadgeClass": "severity-high",
-    "confidence": 94.9,
-    "uploadedImage": "/samples/wheat_rust.jpg",
+    "confidence": 95.3,
+    "uploadedImage": "/uploads/leaf-1793212251552-540613.jpg",
     "summary": "Airborne fungal pathogen producing bright yellow linear stripe pustules along leaf veins, rapidly spreading in cool moist weather.",
     "symptoms": [
       "Bright yellow powdery pustules arranged in linear stripes on leaf blades",
@@ -192,17 +42,61 @@
       "sprayStatus": "URGENT",
       "sprayStatusText": "Urgent spray advised - High spore transmission risk"
     },
-    "timestamp": "2026-10-26T20:14:29.615Z",
-    "formattedDate": "27 Oct 2026, 01:44 am",
-    "location": "Ludhiana, Punjab"
+    "timestamp": "2026-10-28T18:30:52.371Z",
+    "formattedDate": "29 Oct 2026, 12:00 am",
+    "location": "Patiala, Punjab"
   },
   {
-    "id": "diag_1793045668796_529",
+    "id": "diag_1793212251531_220",
+    "crop": "General Crop",
+    "disease": "Healthy Crop - No Disease Detected",
+    "severity": "NONE",
+    "severityBadgeClass": "severity-low",
+    "confidence": 99.4,
+    "uploadedImage": "/samples/healthy_leaf.jpg",
+    "summary": "The leaf foliage shows bright uniform pigmentation, strong cell structural integrity, and no visible fungal or bacterial lesions.",
+    "symptoms": [
+      "Vibrant uniform green coloration across entire blade",
+      "Clean vein network without necrotic spots or yellow halos",
+      "Sturdy leaf tissue and healthy cuticle coating"
+    ],
+    "treatments": [
+      {
+        "step": 1,
+        "title": "Maintain Standard Agronomic Care",
+        "description": "Continue regular balanced irrigation schedule and soil moisture maintenance according to crop stage."
+      },
+      {
+        "step": 2,
+        "title": "Balanced Nutrient Management",
+        "description": "Apply recommended dosage of N-P-K based on soil testing report."
+      }
+    ],
+    "warnings": [],
+    "prevention": [
+      "Inspect field weekly for early pest/disease entry",
+      "Keep field bunds free from weed reservoirs",
+      "Maintain optimal soil bio-health with organic FYM compost"
+    ],
+    "weatherAdvisory": {
+      "recommendation": "No treatment necessary. Maintain standard routine irrigation.",
+      "actionTime": "As per normal schedule",
+      "humidityThreshold": "Normal",
+      "idealTemp": "Ambient",
+      "sprayStatus": "NO_ACTION_NEEDED",
+      "sprayStatusText": "Crop in excellent health - Keep up good practices!"
+    },
+    "timestamp": "2026-10-28T18:30:51.531Z",
+    "formattedDate": "29 Oct 2026, 12:00 am",
+    "location": "Karnal, Haryana"
+  },
+  {
+    "id": "diag_1793212250703_529",
     "crop": "Tomato",
     "disease": "Tomato Early Blight (Alternaria solani)",
     "severity": "MEDIUM",
     "severityBadgeClass": "severity-medium",
-    "confidence": 92.5,
+    "confidence": 91.1,
     "uploadedImage": "/samples/tomato_blight.jpg",
     "summary": "Common fungal disease characterized by concentric target-board dark rings on older lower leaves, eventually spreading upwards.",
     "symptoms": [
@@ -244,17 +138,17 @@
       "sprayStatus": "RECOMMENDED",
       "sprayStatusText": "Ideal weather conditions for application"
     },
-    "timestamp": "2026-10-26T20:14:28.796Z",
-    "formattedDate": "27 Oct 2026, 01:44 am",
-    "location": "Ludhiana, Punjab"
+    "timestamp": "2026-10-28T18:30:50.703Z",
+    "formattedDate": "29 Oct 2026, 12:00 am",
+    "location": "Nashik, Maharashtra"
   },
   {
-    "id": "diag_1793045667960_550",
+    "id": "diag_1793212249868_923",
     "crop": "Rice (Paddy)",
     "disease": "Rice Blast (Magnaporthe oryzae)",
     "severity": "HIGH",
     "severityBadgeClass": "severity-high",
-    "confidence": 95.1,
+    "confidence": 94.8,
     "uploadedImage": "/samples/rice_blast.jpg",
     "summary": "Fungal infection creating diamond-shaped lesions with grayish centers on rice leaves, causing severe yield reduction if untreated during tillering.",
     "symptoms": [
@@ -303,17 +197,117 @@
       "sprayStatus": "SAFE_TO_SPRAY",
       "sprayStatusText": "Good time to spray - Low rain probability for next 18 hours"
     },
-    "timestamp": "2026-10-26T20:14:27.961Z",
-    "formattedDate": "27 Oct 2026, 01:44 am",
+    "timestamp": "2026-10-28T18:30:49.868Z",
+    "formattedDate": "29 Oct 2026, 12:00 am",
     "location": "Ludhiana, Punjab"
   },
   {
-    "id": "diag_1793040600536_622",
+    "id": "diag_test_verification_1793212248772",
+    "crop": "Rice",
+    "disease": "Rice Blast (Magnaporthe oryzae)",
+    "severity": "High",
+    "confidence": 96.5,
+    "timestamp": "2026-10-28T18:30:48.772Z",
+    "location": "Amritsar, Punjab"
+  },
+  {
+    "id": "diag_1793210807979_269",
+    "crop": "Wheat",
+    "disease": "Yellow Stripe Rust (Puccinia striiformis)",
+    "severity": "HIGH",
+    "severityBadgeClass": "severity-high",
+    "confidence": 94.7,
+    "uploadedImage": "/uploads/leaf-1793210807165-102053094.jpg",
+    "summary": "Airborne fungal pathogen producing bright yellow linear stripe pustules along leaf veins, rapidly spreading in cool moist weather.",
+    "symptoms": [
+      "Bright yellow powdery pustules arranged in linear stripes on leaf blades",
+      "Pustules rub off easily onto fingers, leaving yellow powder",
+      "Leaves turn chlorotic, dry out, and shrivel prematurely",
+      "Reduced earhead size and shriveled grain development"
+    ],
+    "treatments": [
+      {
+        "step": 1,
+        "title": "Emergency Foliar Spray",
+        "description": "Spray Propiconazole 25% EC @ 1ml/liter of water (200ml in 200 liters of water per acre) immediately upon first spot detection."
+      },
+      {
+        "step": 2,
+        "title": "Community Border Barrier Spray",
+        "description": "Coordinate with neighboring farmers to spray border rows to contain airborne urediniospores from spreading to adjacent fields."
+      }
+    ],
+    "warnings": [
+      "Delaying spray by more than 5 days can lead to up to 40% yield loss in susceptible wheat varieties."
+    ],
+    "prevention": [
+      "Sow rust-resistant recommended wheat cultivars (e.g. HD 3086, DBW 187, PBW 725)",
+      "Avoid late sowing beyond November 25th in northern plains",
+      "Monitor fields regularly during cool misty morning weather"
+    ],
+    "weatherAdvisory": {
+      "recommendation": "Immediate application required due to cool misty weather favorable for spore multiplication.",
+      "actionTime": "Early Morning",
+      "humidityThreshold": "High (Misty mornings)",
+      "idealTemp": "10°C - 20°C",
+      "sprayStatus": "URGENT",
+      "sprayStatusText": "Urgent spray advised - High spore transmission risk"
+    },
+    "timestamp": "2026-10-28T18:06:47.979Z",
+    "formattedDate": "28 Oct 2026, 11:36 pm",
+    "location": "Patiala, Punjab"
+  },
+  {
+    "id": "diag_1793210807149_0",
+    "crop": "General Crop",
+    "disease": "Healthy Crop - No Disease Detected",
+    "severity": "NONE",
+    "severityBadgeClass": "severity-low",
+    "confidence": 99.1,
+    "uploadedImage": "/samples/healthy_leaf.jpg",
+    "summary": "The leaf foliage shows bright uniform pigmentation, strong cell structural integrity, and no visible fungal or bacterial lesions.",
+    "symptoms": [
+      "Vibrant uniform green coloration across entire blade",
+      "Clean vein network without necrotic spots or yellow halos",
+      "Sturdy leaf tissue and healthy cuticle coating"
+    ],
+    "treatments": [
+      {
+        "step": 1,
+        "title": "Maintain Standard Agronomic Care",
+        "description": "Continue regular balanced irrigation schedule and soil moisture maintenance according to crop stage."
+      },
+      {
+        "step": 2,
+        "title": "Balanced Nutrient Management",
+        "description": "Apply recommended dosage of N-P-K based on soil testing report."
+      }
+    ],
+    "warnings": [],
+    "prevention": [
+      "Inspect field weekly for early pest/disease entry",
+      "Keep field bunds free from weed reservoirs",
+      "Maintain optimal soil bio-health with organic FYM compost"
+    ],
+    "weatherAdvisory": {
+      "recommendation": "No treatment necessary. Maintain standard routine irrigation.",
+      "actionTime": "As per normal schedule",
+      "humidityThreshold": "Normal",
+      "idealTemp": "Ambient",
+      "sprayStatus": "NO_ACTION_NEEDED",
+      "sprayStatusText": "Crop in excellent health - Keep up good practices!"
+    },
+    "timestamp": "2026-10-28T18:06:47.149Z",
+    "formattedDate": "28 Oct 2026, 11:36 pm",
+    "location": "Karnal, Haryana"
+  },
+  {
+    "id": "diag_1793210806329_735",
     "crop": "Tomato",
     "disease": "Tomato Early Blight (Alternaria solani)",
     "severity": "MEDIUM",
     "severityBadgeClass": "severity-medium",
-    "confidence": 93.9,
+    "confidence": 93.4,
     "uploadedImage": "/samples/tomato_blight.jpg",
     "summary": "Common fungal disease characterized by concentric target-board dark rings on older lower leaves, eventually spreading upwards.",
     "symptoms": [
@@ -355,69 +349,17 @@
       "sprayStatus": "RECOMMENDED",
       "sprayStatusText": "Ideal weather conditions for application"
     },
-    "timestamp": "2026-10-26T18:50:00.536Z",
-    "formattedDate": "27 Oct 2026, 12:20 am",
+    "timestamp": "2026-10-28T18:06:46.329Z",
+    "formattedDate": "28 Oct 2026, 11:36 pm",
     "location": "Nashik, Maharashtra"
   },
   {
-    "id": "diag_1793040599288_327",
-    "crop": "Tomato",
-    "disease": "Tomato Early Blight (Alternaria solani)",
-    "severity": "MEDIUM",
-    "severityBadgeClass": "severity-medium",
-    "confidence": 91.7,
-    "uploadedImage": "/samples/tomato_blight.jpg",
-    "summary": "Common fungal disease characterized by concentric target-board dark rings on older lower leaves, eventually spreading upwards.",
-    "symptoms": [
-      "Dark brown to black spots with characteristic concentric rings on lower leaves",
-      "Yellow halo surrounding leaf lesions",
-      "Premature leaf drop starting from lower plant branches",
-      "Sunken dark lesions near stem junctions and fruit calyx"
-    ],
-    "treatments": [
-      {
-        "step": 1,
-        "title": "Prune Infected Lower Leaves",
-        "description": "Carefully trim off lower infected leaves up to 12 inches from the soil surface using sterilized shears and dispose of them away from the farm."
-      },
-      {
-        "step": 2,
-        "title": "Fungicide Foliar Spray",
-        "description": "Apply Mancozeb 75% WP @ 2g/liter of water or Copper Oxychloride 50% WP @ 3g/liter. Alternate with Azoxystrobin after 10 days."
-      },
-      {
-        "step": 3,
-        "title": "Apply Soil Mulching",
-        "description": "Spread straw mulch or plastic mulch around plant bases to prevent soil-borne fungal spores from splashing onto lower leaves during irrigation."
-      }
-    ],
-    "warnings": [
-      "Avoid overhead sprinkler irrigation; always irrigate near the plant root base."
-    ],
-    "prevention": [
-      "Practice 3-year crop rotation with non-solanaceous crops (e.g. maize, legumes)",
-      "Maintain adequate plant spacing (60cm x 45cm) for sunlight penetration",
-      "Apply Trichoderma viride enriched organic compost during land preparation"
-    ],
-    "weatherAdvisory": {
-      "recommendation": "Spray protectant fungicide after morning dew dries.",
-      "actionTime": "Morning (8:00 AM - 11:00 AM)",
-      "humidityThreshold": "Moderate to High",
-      "idealTemp": "24°C - 30°C",
-      "sprayStatus": "RECOMMENDED",
-      "sprayStatusText": "Ideal weather conditions for application"
-    },
-    "timestamp": "2026-10-26T18:49:59.288Z",
-    "formattedDate": "27 Oct 2026, 12:19 am",
-    "location": "Nashik, Maharashtra"
-  },
-  {
-    "id": "diag_1793040586824_307",
+    "id": "diag_1793210805502_965",
     "crop": "Rice (Paddy)",
     "disease": "Rice Blast (Magnaporthe oryzae)",
     "severity": "HIGH",
     "severityBadgeClass": "severity-high",
-    "confidence": 96.4,
+    "confidence": 95.9,
     "uploadedImage": "/samples/rice_blast.jpg",
     "summary": "Fungal infection creating diamond-shaped lesions with grayish centers on rice leaves, causing severe yield reduction if untreated during tillering.",
     "symptoms": [
@@ -466,76 +408,380 @@
       "sprayStatus": "SAFE_TO_SPRAY",
       "sprayStatusText": "Good time to spray - Low rain probability for next 18 hours"
     },
-    "timestamp": "2026-10-26T18:49:46.824Z",
-    "formattedDate": "27 Oct 2026, 12:19 am",
+    "timestamp": "2026-10-28T18:06:45.502Z",
+    "formattedDate": "28 Oct 2026, 11:36 pm",
+    "location": "Ludhiana, Punjab"
+  },
+  {
+    "id": "diag_test_verification_1793210804684",
+    "crop": "Rice",
+    "disease": "Rice Blast (Magnaporthe oryzae)",
+    "severity": "High",
+    "confidence": 96.5,
+    "timestamp": "2026-10-28T18:06:44.684Z",
+    "location": "Amritsar, Punjab"
+  },
+  {
+    "id": "diag_1793210052624_406",
+    "crop": "Wheat",
+    "disease": "Yellow Stripe Rust (Puccinia striiformis)",
+    "severity": "HIGH",
+    "severityBadgeClass": "severity-high",
+    "confidence": 96.6,
+    "uploadedImage": "/uploads/leaf-1793210051808-208893069.jpg",
+    "summary": "Airborne fungal pathogen producing bright yellow linear stripe pustules along leaf veins, rapidly spreading in cool moist weather.",
+    "symptoms": [
+      "Bright yellow powdery pustules arranged in linear stripes on leaf blades",
+      "Pustules rub off easily onto fingers, leaving yellow powder",
+      "Leaves turn chlorotic, dry out, and shrivel prematurely",
+      "Reduced earhead size and shriveled grain development"
+    ],
+    "treatments": [
+      {
+        "step": 1,
+        "title": "Emergency Foliar Spray",
+        "description": "Spray Propiconazole 25% EC @ 1ml/liter of water (200ml in 200 liters of water per acre) immediately upon first spot detection."
+      },
+      {
+        "step": 2,
+        "title": "Community Border Barrier Spray",
+        "description": "Coordinate with neighboring farmers to spray border rows to contain airborne urediniospores from spreading to adjacent fields."
+      }
+    ],
+    "warnings": [
+      "Delaying spray by more than 5 days can lead to up to 40% yield loss in susceptible wheat varieties."
+    ],
+    "prevention": [
+      "Sow rust-resistant recommended wheat cultivars (e.g. HD 3086, DBW 187, PBW 725)",
+      "Avoid late sowing beyond November 25th in northern plains",
+      "Monitor fields regularly during cool misty morning weather"
+    ],
+    "weatherAdvisory": {
+      "recommendation": "Immediate application required due to cool misty weather favorable for spore multiplication.",
+      "actionTime": "Early Morning",
+      "humidityThreshold": "High (Misty mornings)",
+      "idealTemp": "10°C - 20°C",
+      "sprayStatus": "URGENT",
+      "sprayStatusText": "Urgent spray advised - High spore transmission risk"
+    },
+    "timestamp": "2026-10-28T17:54:12.624Z",
+    "formattedDate": "28 Oct 2026, 11:24 pm",
+    "location": "Patiala, Punjab"
+  },
+  {
+    "id": "diag_1793210051789_160",
+    "crop": "General Crop",
+    "disease": "Healthy Crop - No Disease Detected",
+    "severity": "NONE",
+    "severityBadgeClass": "severity-low",
+    "confidence": 97.6,
+    "uploadedImage": "/samples/healthy_leaf.jpg",
+    "summary": "The leaf foliage shows bright uniform pigmentation, strong cell structural integrity, and no visible fungal or bacterial lesions.",
+    "symptoms": [
+      "Vibrant uniform green coloration across entire blade",
+      "Clean vein network without necrotic spots or yellow halos",
+      "Sturdy leaf tissue and healthy cuticle coating"
+    ],
+    "treatments": [
+      {
+        "step": 1,
+        "title": "Maintain Standard Agronomic Care",
+        "description": "Continue regular balanced irrigation schedule and soil moisture maintenance according to crop stage."
+      },
+      {
+        "step": 2,
+        "title": "Balanced Nutrient Management",
+        "description": "Apply recommended dosage of N-P-K based on soil testing report."
+      }
+    ],
+    "warnings": [],
+    "prevention": [
+      "Inspect field weekly for early pest/disease entry",
+      "Keep field bunds free from weed reservoirs",
+      "Maintain optimal soil bio-health with organic FYM compost"
+    ],
+    "weatherAdvisory": {
+      "recommendation": "No treatment necessary. Maintain standard routine irrigation.",
+      "actionTime": "As per normal schedule",
+      "humidityThreshold": "Normal",
+      "idealTemp": "Ambient",
+      "sprayStatus": "NO_ACTION_NEEDED",
+      "sprayStatusText": "Crop in excellent health - Keep up good practices!"
+    },
+    "timestamp": "2026-10-28T17:54:11.789Z",
+    "formattedDate": "28 Oct 2026, 11:24 pm",
+    "location": "Karnal, Haryana"
+  },
+  {
+    "id": "diag_1793210050970_165",
+    "crop": "Tomato",
+    "disease": "Tomato Early Blight (Alternaria solani)",
+    "severity": "MEDIUM",
+    "severityBadgeClass": "severity-medium",
+    "confidence": 94.3,
+    "uploadedImage": "/samples/tomato_blight.jpg",
+    "summary": "Common fungal disease characterized by concentric target-board dark rings on older lower leaves, eventually spreading upwards.",
+    "symptoms": [
+      "Dark brown to black spots with characteristic concentric rings on lower leaves",
+      "Yellow halo surrounding leaf lesions",
+      "Premature leaf drop starting from lower plant branches",
+      "Sunken dark lesions near stem junctions and fruit calyx"
+    ],
+    "treatments": [
+      {
+        "step": 1,
+        "title": "Prune Infected Lower Leaves",
+        "description": "Carefully trim off lower infected leaves up to 12 inches from the soil surface using sterilized shears and dispose of them away from the farm."
+      },
+      {
+        "step": 2,
+        "title": "Fungicide Foliar Spray",
+        "description": "Apply Mancozeb 75% WP @ 2g/liter of water or Copper Oxychloride 50% WP @ 3g/liter. Alternate with Azoxystrobin after 10 days."
+      },
+      {
+        "step": 3,
+        "title": "Apply Soil Mulching",
+        "description": "Spread straw mulch or plastic mulch around plant bases to prevent soil-borne fungal spores from splashing onto lower leaves during irrigation."
+      }
+    ],
+    "warnings": [
+      "Avoid overhead sprinkler irrigation; always irrigate near the plant root base."
+    ],
+    "prevention": [
+      "Practice 3-year crop rotation with non-solanaceous crops (e.g. maize, legumes)",
+      "Maintain adequate plant spacing (60cm x 45cm) for sunlight penetration",
+      "Apply Trichoderma viride enriched organic compost during land preparation"
+    ],
+    "weatherAdvisory": {
+      "recommendation": "Spray protectant fungicide after morning dew dries.",
+      "actionTime": "Morning (8:00 AM - 11:00 AM)",
+      "humidityThreshold": "Moderate to High",
+      "idealTemp": "24°C - 30°C",
+      "sprayStatus": "RECOMMENDED",
+      "sprayStatusText": "Ideal weather conditions for application"
+    },
+    "timestamp": "2026-10-28T17:54:10.970Z",
+    "formattedDate": "28 Oct 2026, 11:24 pm",
     "location": "Nashik, Maharashtra"
   },
   {
-    "id": "diag_1793040585356_184",
+    "id": "diag_1793210050156_286",
     "crop": "Rice (Paddy)",
     "disease": "Rice Blast (Magnaporthe oryzae)",
+    "severity": "HIGH",
+    "severityBadgeClass": "severity-high",
+    "confidence": 96.7,
+    "uploadedImage": "/samples/rice_blast.jpg",
+    "summary": "Fungal infection creating diamond-shaped lesions with grayish centers on rice leaves, causing severe yield reduction if untreated during tillering.",
+    "symptoms": [
+      "Spindle-shaped or diamond-shaped spots on leaves",
+      "Lesions with reddish-brown margins and gray or white centers",
+      "Yellowing around lesions causing leaf tip drying",
+      "Lesions on node and collar areas causing stem breakage"
+    ],
+    "treatments": [
+      {
+        "step": 1,
+        "title": "Immediate Fungicide Application",
+        "description": "Spray Tricyclazole 75% WP @ 0.6g/liter of water or Isoprothiolane 40% EC @ 1.5ml/liter of water thoroughly across affected field patches."
+      },
+      {
+        "step": 2,
+        "title": "Adjust Nitrogen Fertilizer Usage",
+        "description": "Temporarily suspend top-dressing of Urea nitrogen fertilizer. Excessive nitrogen promotes soft foliage that accelerates fungal spore germination."
+      },
+      {
+        "step": 3,
+        "title": "Drain Field Excess Water",
+        "description": "Drain stagnant water for 2-3 days to lower canopy relative humidity, then re-irrigate with clean fresh water."
+      },
+      {
+        "step": 4,
+        "title": "Organic Bio-Control Application",
+        "description": "Spray Pseudomonas fluorescens @ 10g/liter of water in the early morning as a bio-fungicidal follow-up 5 days after chemical spray."
+      }
+    ],
+    "warnings": [
+      "Do not apply systemic fungicide during rainfall or within 3 hours before expected rain.",
+      "Avoid spraying in hot mid-day sun to prevent leaf scorching."
+    ],
+    "prevention": [
+      "Use certified disease-resistant varieties such as Swarna Sub1 or PR 126",
+      "Treat seeds with Carbendazim @ 2g/kg seed before sowing",
+      "Maintain recommended plant spacing (20cm x 15cm) to ensure adequate airflow",
+      "Destroy field stubble and weed hosts around field bunds"
+    ],
+    "weatherAdvisory": {
+      "recommendation": "Spray recommended fungicide immediately within the next 24-36 hours.",
+      "actionTime": "Early Morning (6:00 AM - 9:00 AM) or Late Evening",
+      "humidityThreshold": "High (>85% relative humidity favors blast spore release)",
+      "idealTemp": "20°C - 28°C",
+      "sprayStatus": "SAFE_TO_SPRAY",
+      "sprayStatusText": "Good time to spray - Low rain probability for next 18 hours"
+    },
+    "timestamp": "2026-10-28T17:54:10.156Z",
+    "formattedDate": "28 Oct 2026, 11:24 pm",
+    "location": "Ludhiana, Punjab"
+  },
+  {
+    "id": "diag_test_verification_1793210049318",
+    "crop": "Rice",
+    "disease": "Rice Blast (Magnaporthe oryzae)",
+    "severity": "High",
+    "confidence": 96.5,
+    "timestamp": "2026-10-28T17:54:09.318Z",
+    "location": "Amritsar, Punjab"
+  },
+  {
+    "id": "diag_1793209592192_730",
+    "crop": "Wheat",
+    "disease": "Yellow Stripe Rust (Puccinia striiformis)",
     "severity": "HIGH",
     "severityBadgeClass": "severity-high",
     "confidence": 95.7,
-    "uploadedImage": "/samples/rice_blast.jpg",
-    "summary": "Fungal infection creating diamond-shaped lesions with grayish centers on rice leaves, causing severe yield reduction if untreated during tillering.",
+    "uploadedImage": "/uploads/leaf-1793209591383-602846011.jpg",
+    "summary": "Airborne fungal pathogen producing bright yellow linear stripe pustules along leaf veins, rapidly spreading in cool moist weather.",
     "symptoms": [
-      "Spindle-shaped or diamond-shaped spots on leaves",
-      "Lesions with reddish-brown margins and gray or white centers",
-      "Yellowing around lesions causing leaf tip drying",
-      "Lesions on node and collar areas causing stem breakage"
+      "Bright yellow powdery pustules arranged in linear stripes on leaf blades",
+      "Pustules rub off easily onto fingers, leaving yellow powder",
+      "Leaves turn chlorotic, dry out, and shrivel prematurely",
+      "Reduced earhead size and shriveled grain development"
     ],
     "treatments": [
       {
         "step": 1,
-        "title": "Immediate Fungicide Application",
-        "description": "Spray Tricyclazole 75% WP @ 0.6g/liter of water or Isoprothiolane 40% EC @ 1.5ml/liter of water thoroughly across affected field patches."
+        "title": "Emergency Foliar Spray",
+        "description": "Spray Propiconazole 25% EC @ 1ml/liter of water (200ml in 200 liters of water per acre) immediately upon first spot detection."
       },
       {
         "step": 2,
-        "title": "Adjust Nitrogen Fertilizer Usage",
-        "description": "Temporarily suspend top-dressing of Urea nitrogen fertilizer. Excessive nitrogen promotes soft foliage that accelerates fungal spore germination."
-      },
-      {
-        "step": 3,
-        "title": "Drain Field Excess Water",
-        "description": "Drain stagnant water for 2-3 days to lower canopy relative humidity, then re-irrigate with clean fresh water."
-      },
-      {
-        "step": 4,
-        "title": "Organic Bio-Control Application",
-        "description": "Spray Pseudomonas fluorescens @ 10g/liter of water in the early morning as a bio-fungicidal follow-up 5 days after chemical spray."
+        "title": "Community Border Barrier Spray",
+        "description": "Coordinate with neighboring farmers to spray border rows to contain airborne urediniospores from spreading to adjacent fields."
       }
     ],
     "warnings": [
-      "Do not apply systemic fungicide during rainfall or within 3 hours before expected rain.",
-      "Avoid spraying in hot mid-day sun to prevent leaf scorching."
+      "Delaying spray by more than 5 days can lead to up to 40% yield loss in susceptible wheat varieties."
     ],
     "prevention": [
-      "Use certified disease-resistant varieties such as Swarna Sub1 or PR 126",
-      "Treat seeds with Carbendazim @ 2g/kg seed before sowing",
-      "Maintain recommended plant spacing (20cm x 15cm) to ensure adequate airflow",
-      "Destroy field stubble and weed hosts around field bunds"
+      "Sow rust-resistant recommended wheat cultivars (e.g. HD 3086, DBW 187, PBW 725)",
+      "Avoid late sowing beyond November 25th in northern plains",
+      "Monitor fields regularly during cool misty morning weather"
     ],
     "weatherAdvisory": {
-      "recommendation": "Spray recommended fungicide immediately within the next 24-36 hours.",
-      "actionTime": "Early Morning (6:00 AM - 9:00 AM) or Late Evening",
-      "humidityThreshold": "High (>85% relative humidity favors blast spore release)",
-      "idealTemp": "20°C - 28°C",
-      "sprayStatus": "SAFE_TO_SPRAY",
-      "sprayStatusText": "Good time to spray - Low rain probability for next 18 hours"
+      "recommendation": "Immediate application required due to cool misty weather favorable for spore multiplication.",
+      "actionTime": "Early Morning",
+      "humidityThreshold": "High (Misty mornings)",
+      "idealTemp": "10°C - 20°C",
+      "sprayStatus": "URGENT",
+      "sprayStatusText": "Urgent spray advised - High spore transmission risk"
     },
-    "timestamp": "2026-10-26T18:49:45.356Z",
-    "formattedDate": "27 Oct 2026, 12:19 am",
+    "timestamp": "2026-10-28T17:46:32.192Z",
+    "formattedDate": "28 Oct 2026, 11:16 pm",
+    "location": "Patiala, Punjab"
+  },
+  {
+    "id": "diag_1793209591369_229",
+    "crop": "General Crop",
+    "disease": "Healthy Crop - No Disease Detected",
+    "severity": "NONE",
+    "severityBadgeClass": "severity-low",
+    "confidence": 99.1,
+    "uploadedImage": "/samples/healthy_leaf.jpg",
+    "summary": "The leaf foliage shows bright uniform pigmentation, strong cell structural integrity, and no visible fungal or bacterial lesions.",
+    "symptoms": [
+      "Vibrant uniform green coloration across entire blade",
+      "Clean vein network without necrotic spots or yellow halos",
+      "Sturdy leaf tissue and healthy cuticle coating"
+    ],
+    "treatments": [
+      {
+        "step": 1,
+        "title": "Maintain Standard Agronomic Care",
+        "description": "Continue regular balanced irrigation schedule and soil moisture maintenance according to crop stage."
+      },
+      {
+        "step": 2,
+        "title": "Balanced Nutrient Management",
+        "description": "Apply recommended dosage of N-P-K based on soil testing report."
+      }
+    ],
+    "warnings": [],
+    "prevention": [
+      "Inspect field weekly for early pest/disease entry",
+      "Keep field bunds free from weed reservoirs",
+      "Maintain optimal soil bio-health with organic FYM compost"
+    ],
+    "weatherAdvisory": {
+      "recommendation": "No treatment necessary. Maintain standard routine irrigation.",
+      "actionTime": "As per normal schedule",
+      "humidityThreshold": "Normal",
+      "idealTemp": "Ambient",
+      "sprayStatus": "NO_ACTION_NEEDED",
+      "sprayStatusText": "Crop in excellent health - Keep up good practices!"
+    },
+    "timestamp": "2026-10-28T17:46:31.369Z",
+    "formattedDate": "28 Oct 2026, 11:16 pm",
+    "location": "Karnal, Haryana"
+  },
+  {
+    "id": "diag_1793209590542_342",
+    "crop": "Tomato",
+    "disease": "Tomato Early Blight (Alternaria solani)",
+    "severity": "MEDIUM",
+    "severityBadgeClass": "severity-medium",
+    "confidence": 92.9,
+    "uploadedImage": "/samples/tomato_blight.jpg",
+    "summary": "Common fungal disease characterized by concentric target-board dark rings on older lower leaves, eventually spreading upwards.",
+    "symptoms": [
+      "Dark brown to black spots with characteristic concentric rings on lower leaves",
+      "Yellow halo surrounding leaf lesions",
+      "Premature leaf drop starting from lower plant branches",
+      "Sunken dark lesions near stem junctions and fruit calyx"
+    ],
+    "treatments": [
+      {
+        "step": 1,
+        "title": "Prune Infected Lower Leaves",
+        "description": "Carefully trim off lower infected leaves up to 12 inches from the soil surface using sterilized shears and dispose of them away from the farm."
+      },
+      {
+        "step": 2,
+        "title": "Fungicide Foliar Spray",
+        "description": "Apply Mancozeb 75% WP @ 2g/liter of water or Copper Oxychloride 50% WP @ 3g/liter. Alternate with Azoxystrobin after 10 days."
+      },
+      {
+        "step": 3,
+        "title": "Apply Soil Mulching",
+        "description": "Spread straw mulch or plastic mulch around plant bases to prevent soil-borne fungal spores from splashing onto lower leaves during irrigation."
+      }
+    ],
+    "warnings": [
+      "Avoid overhead sprinkler irrigation; always irrigate near the plant root base."
+    ],
+    "prevention": [
+      "Practice 3-year crop rotation with non-solanaceous crops (e.g. maize, legumes)",
+      "Maintain adequate plant spacing (60cm x 45cm) for sunlight penetration",
+      "Apply Trichoderma viride enriched organic compost during land preparation"
+    ],
+    "weatherAdvisory": {
+      "recommendation": "Spray protectant fungicide after morning dew dries.",
+      "actionTime": "Morning (8:00 AM - 11:00 AM)",
+      "humidityThreshold": "Moderate to High",
+      "idealTemp": "24°C - 30°C",
+      "sprayStatus": "RECOMMENDED",
+      "sprayStatusText": "Ideal weather conditions for application"
+    },
+    "timestamp": "2026-10-28T17:46:30.542Z",
+    "formattedDate": "28 Oct 2026, 11:16 pm",
     "location": "Nashik, Maharashtra"
   },
   {
-    "id": "diag_1793040584585_152",
+    "id": "diag_1793209589723_905",
     "crop": "Rice (Paddy)",
     "disease": "Rice Blast (Magnaporthe oryzae)",
     "severity": "HIGH",
     "severityBadgeClass": "severity-high",
-    "confidence": 95.7,
+    "confidence": 95.3,
     "uploadedImage": "/samples/rice_blast.jpg",
     "summary": "Fungal infection creating diamond-shaped lesions with grayish centers on rice leaves, causing severe yield reduction if untreated during tillering.",
     "symptoms": [
@@ -584,71 +830,164 @@
       "sprayStatus": "SAFE_TO_SPRAY",
       "sprayStatusText": "Good time to spray - Low rain probability for next 18 hours"
     },
-    "timestamp": "2026-10-26T18:49:44.585Z",
-    "formattedDate": "27 Oct 2026, 12:19 am",
-    "location": "Nashik, Maharashtra"
+    "timestamp": "2026-10-28T17:46:29.723Z",
+    "formattedDate": "28 Oct 2026, 11:16 pm",
+    "location": "Ludhiana, Punjab"
   },
   {
-    "id": "diag_1793040577652_504",
-    "crop": "Rice (Paddy)",
+    "id": "diag_test_verification_1793209588878",
+    "crop": "Rice",
     "disease": "Rice Blast (Magnaporthe oryzae)",
+    "severity": "High",
+    "confidence": 96.5,
+    "timestamp": "2026-10-28T17:46:28.878Z",
+    "location": "Amritsar, Punjab"
+  },
+  {
+    "id": "diag_1793209433472_605",
+    "crop": "Wheat",
+    "disease": "Yellow Stripe Rust (Puccinia striiformis)",
     "severity": "HIGH",
     "severityBadgeClass": "severity-high",
-    "confidence": 94.2,
-    "uploadedImage": "/samples/rice_blast.jpg",
-    "summary": "Fungal infection creating diamond-shaped lesions with grayish centers on rice leaves, causing severe yield reduction if untreated during tillering.",
+    "confidence": 96.2,
+    "uploadedImage": "/uploads/leaf-1793209432647-200025492.jpg",
+    "summary": "Airborne fungal pathogen producing bright yellow linear stripe pustules along leaf veins, rapidly spreading in cool moist weather.",
     "symptoms": [
-      "Spindle-shaped or diamond-shaped spots on leaves",
-      "Lesions with reddish-brown margins and gray or white centers",
-      "Yellowing around lesions causing leaf tip drying",
-      "Lesions on node and collar areas causing stem breakage"
+      "Bright yellow powdery pustules arranged in linear stripes on leaf blades",
+      "Pustules rub off easily onto fingers, leaving yellow powder",
+      "Leaves turn chlorotic, dry out, and shrivel prematurely",
+      "Reduced earhead size and shriveled grain development"
     ],
     "treatments": [
       {
         "step": 1,
-        "title": "Immediate Fungicide Application",
-        "description": "Spray Tricyclazole 75% WP @ 0.6g/liter of water or Isoprothiolane 40% EC @ 1.5ml/liter of water thoroughly across affected field patches."
+        "title": "Emergency Foliar Spray",
+        "description": "Spray Propiconazole 25% EC @ 1ml/liter of water (200ml in 200 liters of water per acre) immediately upon first spot detection."
       },
       {
         "step": 2,
-        "title": "Adjust Nitrogen Fertilizer Usage",
-        "description": "Temporarily suspend top-dressing of Urea nitrogen fertilizer. Excessive nitrogen promotes soft foliage that accelerates fungal spore germination."
-      },
-      {
-        "step": 3,
-        "title": "Drain Field Excess Water",
-        "description": "Drain stagnant water for 2-3 days to lower canopy relative humidity, then re-irrigate with clean fresh water."
-      },
-      {
-        "step": 4,
-        "title": "Organic Bio-Control Application",
-        "description": "Spray Pseudomonas fluorescens @ 10g/liter of water in the early morning as a bio-fungicidal follow-up 5 days after chemical spray."
+        "title": "Community Border Barrier Spray",
+        "description": "Coordinate with neighboring farmers to spray border rows to contain airborne urediniospores from spreading to adjacent fields."
       }
     ],
     "warnings": [
-      "Do not apply systemic fungicide during rainfall or within 3 hours before expected rain.",
-      "Avoid spraying in hot mid-day sun to prevent leaf scorching."
+      "Delaying spray by more than 5 days can lead to up to 40% yield loss in susceptible wheat varieties."
     ],
     "prevention": [
-      "Use certified disease-resistant varieties such as Swarna Sub1 or PR 126",
-      "Treat seeds with Carbendazim @ 2g/kg seed before sowing",
-      "Maintain recommended plant spacing (20cm x 15cm) to ensure adequate airflow",
-      "Destroy field stubble and weed hosts around field bunds"
+      "Sow rust-resistant recommended wheat cultivars (e.g. HD 3086, DBW 187, PBW 725)",
+      "Avoid late sowing beyond November 25th in northern plains",
+      "Monitor fields regularly during cool misty morning weather"
     ],
     "weatherAdvisory": {
-      "recommendation": "Spray recommended fungicide immediately within the next 24-36 hours.",
-      "actionTime": "Early Morning (6:00 AM - 9:00 AM) or Late Evening",
-      "humidityThreshold": "High (>85% relative humidity favors blast spore release)",
-      "idealTemp": "20°C - 28°C",
-      "sprayStatus": "SAFE_TO_SPRAY",
-      "sprayStatusText": "Good time to spray - Low rain probability for next 18 hours"
+      "recommendation": "Immediate application required due to cool misty weather favorable for spore multiplication.",
+      "actionTime": "Early Morning",
+      "humidityThreshold": "High (Misty mornings)",
+      "idealTemp": "10°C - 20°C",
+      "sprayStatus": "URGENT",
+      "sprayStatusText": "Urgent spray advised - High spore transmission risk"
     },
-    "timestamp": "2026-10-26T18:49:37.652Z",
-    "formattedDate": "27 Oct 2026, 12:19 am",
+    "timestamp": "2026-10-28T17:43:53.472Z",
+    "formattedDate": "28 Oct 2026, 11:13 pm",
+    "location": "Patiala, Punjab"
+  },
+  {
+    "id": "diag_1793209432626_79",
+    "crop": "General Crop",
+    "disease": "Healthy Crop - No Disease Detected",
+    "severity": "NONE",
+    "severityBadgeClass": "severity-low",
+    "confidence": 98.6,
+    "uploadedImage": "/samples/healthy_leaf.jpg",
+    "summary": "The leaf foliage shows bright uniform pigmentation, strong cell structural integrity, and no visible fungal or bacterial lesions.",
+    "symptoms": [
+      "Vibrant uniform green coloration across entire blade",
+      "Clean vein network without necrotic spots or yellow halos",
+      "Sturdy leaf tissue and healthy cuticle coating"
+    ],
+    "treatments": [
+      {
+        "step": 1,
+        "title": "Maintain Standard Agronomic Care",
+        "description": "Continue regular balanced irrigation schedule and soil moisture maintenance according to crop stage."
+      },
+      {
+        "step": 2,
+        "title": "Balanced Nutrient Management",
+        "description": "Apply recommended dosage of N-P-K based on soil testing report."
+      }
+    ],
+    "warnings": [],
+    "prevention": [
+      "Inspect field weekly for early pest/disease entry",
+      "Keep field bunds free from weed reservoirs",
+      "Maintain optimal soil bio-health with organic FYM compost"
+    ],
+    "weatherAdvisory": {
+      "recommendation": "No treatment necessary. Maintain standard routine irrigation.",
+      "actionTime": "As per normal schedule",
+      "humidityThreshold": "Normal",
+      "idealTemp": "Ambient",
+      "sprayStatus": "NO_ACTION_NEEDED",
+      "sprayStatusText": "Crop in excellent health - Keep up good practices!"
+    },
+    "timestamp": "2026-10-28T17:43:52.626Z",
+    "formattedDate": "28 Oct 2026, 11:13 pm",
+    "location": "Karnal, Haryana"
+  },
+  {
+    "id": "diag_1793209431808_656",
+    "crop": "Tomato",
+    "disease": "Tomato Early Blight (Alternaria solani)",
+    "severity": "MEDIUM",
+    "severityBadgeClass": "severity-medium",
+    "confidence": 92,
+    "uploadedImage": "/samples/tomato_blight.jpg",
+    "summary": "Common fungal disease characterized by concentric target-board dark rings on older lower leaves, eventually spreading upwards.",
+    "symptoms": [
+      "Dark brown to black spots with characteristic concentric rings on lower leaves",
+      "Yellow halo surrounding leaf lesions",
+      "Premature leaf drop starting from lower plant branches",
+      "Sunken dark lesions near stem junctions and fruit calyx"
+    ],
+    "treatments": [
+      {
+        "step": 1,
+        "title": "Prune Infected Lower Leaves",
+        "description": "Carefully trim off lower infected leaves up to 12 inches from the soil surface using sterilized shears and dispose of them away from the farm."
+      },
+      {
+        "step": 2,
+        "title": "Fungicide Foliar Spray",
+        "description": "Apply Mancozeb 75% WP @ 2g/liter of water or Copper Oxychloride 50% WP @ 3g/liter. Alternate with Azoxystrobin after 10 days."
+      },
+      {
+        "step": 3,
+        "title": "Apply Soil Mulching",
+        "description": "Spread straw mulch or plastic mulch around plant bases to prevent soil-borne fungal spores from splashing onto lower leaves during irrigation."
+      }
+    ],
+    "warnings": [
+      "Avoid overhead sprinkler irrigation; always irrigate near the plant root base."
+    ],
+    "prevention": [
+      "Practice 3-year crop rotation with non-solanaceous crops (e.g. maize, legumes)",
+      "Maintain adequate plant spacing (60cm x 45cm) for sunlight penetration",
+      "Apply Trichoderma viride enriched organic compost during land preparation"
+    ],
+    "weatherAdvisory": {
+      "recommendation": "Spray protectant fungicide after morning dew dries.",
+      "actionTime": "Morning (8:00 AM - 11:00 AM)",
+      "humidityThreshold": "Moderate to High",
+      "idealTemp": "24°C - 30°C",
+      "sprayStatus": "RECOMMENDED",
+      "sprayStatusText": "Ideal weather conditions for application"
+    },
+    "timestamp": "2026-10-28T17:43:51.808Z",
+    "formattedDate": "28 Oct 2026, 11:13 pm",
     "location": "Nashik, Maharashtra"
   },
   {
-    "id": "diag_1793032356270_768",
+    "id": "diag_1793209430986_97",
     "crop": "Rice (Paddy)",
     "disease": "Rice Blast (Magnaporthe oryzae)",
     "severity": "HIGH",
@@ -702,70 +1041,27 @@
       "sprayStatus": "SAFE_TO_SPRAY",
       "sprayStatusText": "Good time to spray - Low rain probability for next 18 hours"
     },
-    "timestamp": "2026-10-26T16:32:36.271Z",
-    "formattedDate": "26 Oct 2026, 10:02 pm",
-    "location": "Nashik, Maharashtra"
+    "timestamp": "2026-10-28T17:43:50.986Z",
+    "formattedDate": "28 Oct 2026, 11:13 pm",
+    "location": "Ludhiana, Punjab"
   },
   {
-    "id": "diag_1793032290629_278",
-    "crop": "Tomato",
-    "disease": "Tomato Early Blight (Alternaria solani)",
-    "severity": "MEDIUM",
-    "severityBadgeClass": "severity-medium",
-    "confidence": 93.7,
-    "uploadedImage": "/samples/tomato_blight.jpg",
-    "summary": "Common fungal disease characterized by concentric target-board dark rings on older lower leaves, eventually spreading upwards.",
-    "symptoms": [
-      "Dark brown to black spots with characteristic concentric rings on lower leaves",
-      "Yellow halo surrounding leaf lesions",
-      "Premature leaf drop starting from lower plant branches",
-      "Sunken dark lesions near stem junctions and fruit calyx"
-    ],
-    "treatments": [
-      {
-        "step": 1,
-        "title": "Prune Infected Lower Leaves",
-        "description": "Carefully trim off lower infected leaves up to 12 inches from the soil surface using sterilized shears and dispose of them away from the farm."
-      },
-      {
-        "step": 2,
-        "title": "Fungicide Foliar Spray",
-        "description": "Apply Mancozeb 75% WP @ 2g/liter of water or Copper Oxychloride 50% WP @ 3g/liter. Alternate with Azoxystrobin after 10 days."
-      },
-      {
-        "step": 3,
-        "title": "Apply Soil Mulching",
-        "description": "Spread straw mulch or plastic mulch around plant bases to prevent soil-borne fungal spores from splashing onto lower leaves during irrigation."
-      }
-    ],
-    "warnings": [
-      "Avoid overhead sprinkler irrigation; always irrigate near the plant root base."
-    ],
-    "prevention": [
-      "Practice 3-year crop rotation with non-solanaceous crops (e.g. maize, legumes)",
-      "Maintain adequate plant spacing (60cm x 45cm) for sunlight penetration",
-      "Apply Trichoderma viride enriched organic compost during land preparation"
-    ],
-    "weatherAdvisory": {
-      "recommendation": "Spray protectant fungicide after morning dew dries.",
-      "actionTime": "Morning (8:00 AM - 11:00 AM)",
-      "humidityThreshold": "Moderate to High",
-      "idealTemp": "24°C - 30°C",
-      "sprayStatus": "RECOMMENDED",
-      "sprayStatusText": "Ideal weather conditions for application"
-    },
-    "timestamp": "2026-10-26T16:31:30.629Z",
-    "formattedDate": "26 Oct 2026, 10:01 pm",
-    "location": "Nashik, Maharashtra"
+    "id": "diag_test_verification_1793209429691",
+    "crop": "Rice",
+    "disease": "Rice Blast (Magnaporthe oryzae)",
+    "severity": "High",
+    "confidence": 96.5,
+    "timestamp": "2026-10-28T17:43:49.691Z",
+    "location": "Amritsar, Punjab"
   },
   {
-    "id": "diag_1786428518246_616",
+    "id": "diag_1793208726353_47",
     "crop": "Rice (Paddy)",
     "disease": "Rice Blast (Magnaporthe oryzae)",
     "severity": "HIGH",
     "severityBadgeClass": "severity-high",
-    "confidence": 93.5,
-    "uploadedImage": "/uploads/leaf-1786428517391-333261483.jpeg",
+    "confidence": 93.9,
+    "uploadedImage": "/uploads/leaf-1793208725527-95871677.jpeg",
     "summary": "Fungal infection creating diamond-shaped lesions with grayish centers on rice leaves, causing severe yield reduction if untreated during tillering.",
     "symptoms": [
       "Spindle-shaped or diamond-shaped spots on leaves",
@@ -813,48 +1109,119 @@
       "sprayStatus": "SAFE_TO_SPRAY",
       "sprayStatusText": "Good time to spray - Low rain probability for next 18 hours"
     },
-    "timestamp": "2026-08-11T06:08:38.246Z",
-    "formattedDate": "11 Aug 2026, 11:38 am",
-    "location": "Ludhiana, Punjab"
+    "timestamp": "2026-10-28T17:32:06.353Z",
+    "formattedDate": "28 Oct 2026, 11:02 pm",
+    "location": "Guntur, Andhra Pradesh"
   },
   {
-    "id": "diag_demo_1",
+    "id": "diag_1793208714190_789",
     "crop": "Rice (Paddy)",
     "disease": "Rice Blast (Magnaporthe oryzae)",
     "severity": "HIGH",
     "severityBadgeClass": "severity-high",
-    "confidence": 95.2,
-    "sampleImage": "/samples/rice_blast.jpg",
-    "summary": "Fungal infection creating diamond-shaped lesions with grayish centers on rice leaves.",
+    "confidence": 94.1,
+    "uploadedImage": "/uploads/leaf-1793208713358-205228718.jpeg",
+    "summary": "Fungal infection creating diamond-shaped lesions with grayish centers on rice leaves, causing severe yield reduction if untreated during tillering.",
     "symptoms": [
       "Spindle-shaped or diamond-shaped spots on leaves",
-      "Lesions with reddish-brown margins and gray or white centers"
+      "Lesions with reddish-brown margins and gray or white centers",
+      "Yellowing around lesions causing leaf tip drying",
+      "Lesions on node and collar areas causing stem breakage"
     ],
     "treatments": [
       {
         "step": 1,
         "title": "Immediate Fungicide Application",
-        "description": "Spray Tricyclazole 75% WP @ 0.6g/liter of water thoroughly across affected field patches."
+        "description": "Spray Tricyclazole 75% WP @ 0.6g/liter of water or Isoprothiolane 40% EC @ 1.5ml/liter of water thoroughly across affected field patches."
       },
       {
         "step": 2,
         "title": "Adjust Nitrogen Fertilizer Usage",
-        "description": "Temporarily suspend top-dressing of Urea nitrogen fertilizer."
+        "description": "Temporarily suspend top-dressing of Urea nitrogen fertilizer. Excessive nitrogen promotes soft foliage that accelerates fungal spore germination."
+      },
+      {
+        "step": 3,
+        "title": "Drain Field Excess Water",
+        "description": "Drain stagnant water for 2-3 days to lower canopy relative humidity, then re-irrigate with clean fresh water."
+      },
+      {
+        "step": 4,
+        "title": "Organic Bio-Control Application",
+        "description": "Spray Pseudomonas fluorescens @ 10g/liter of water in the early morning as a bio-fungicidal follow-up 5 days after chemical spray."
       }
     ],
+    "warnings": [
+      "Do not apply systemic fungicide during rainfall or within 3 hours before expected rain.",
+      "Avoid spraying in hot mid-day sun to prevent leaf scorching."
+    ],
     "prevention": [
-      "Use certified disease-resistant varieties such as Swarna Sub1",
-      "Treat seeds with Carbendazim @ 2g/kg seed before sowing"
+      "Use certified disease-resistant varieties such as Swarna Sub1 or PR 126",
+      "Treat seeds with Carbendazim @ 2g/kg seed before sowing",
+      "Maintain recommended plant spacing (20cm x 15cm) to ensure adequate airflow",
+      "Destroy field stubble and weed hosts around field bunds"
     ],
     "weatherAdvisory": {
       "recommendation": "Spray recommended fungicide immediately within the next 24-36 hours.",
-      "actionTime": "Early Morning (6:00 AM - 9:00 AM)",
+      "actionTime": "Early Morning (6:00 AM - 9:00 AM) or Late Evening",
       "humidityThreshold": "High (>85% relative humidity favors blast spore release)",
+      "idealTemp": "20°C - 28°C",
       "sprayStatus": "SAFE_TO_SPRAY",
       "sprayStatusText": "Good time to spray - Low rain probability for next 18 hours"
     },
-    "timestamp": "2026-08-11T09:30:00.000Z",
-    "formattedDate": "11 Aug 2026, 09:30 AM",
-    "location": "Ludhiana, Punjab"
+    "timestamp": "2026-10-28T17:31:54.190Z",
+    "formattedDate": "28 Oct 2026, 11:01 pm",
+    "location": "Guntur, Andhra Pradesh"
+  },
+  {
+    "id": "diag_1793208337106_509",
+    "crop": "Tomato",
+    "disease": "Tomato Early Blight (Alternaria solani)",
+    "severity": "MEDIUM",
+    "severityBadgeClass": "severity-medium",
+    "confidence": 94.2,
+    "uploadedImage": "/samples/tomato_blight.jpg",
+    "summary": "Common fungal disease characterized by concentric target-board dark rings on older lower leaves, eventually spreading upwards.",
+    "symptoms": [
+      "Dark brown to black spots with characteristic concentric rings on lower leaves",
+      "Yellow halo surrounding leaf lesions",
+      "Premature leaf drop starting from lower plant branches",
+      "Sunken dark lesions near stem junctions and fruit calyx"
+    ],
+    "treatments": [
+      {
+        "step": 1,
+        "title": "Prune Infected Lower Leaves",
+        "description": "Carefully trim off lower infected leaves up to 12 inches from the soil surface using sterilized shears and dispose of them away from the farm."
+      },
+      {
+        "step": 2,
+        "title": "Fungicide Foliar Spray",
+        "description": "Apply Mancozeb 75% WP @ 2g/liter of water or Copper Oxychloride 50% WP @ 3g/liter. Alternate with Azoxystrobin after 10 days."
+      },
+      {
+        "step": 3,
+        "title": "Apply Soil Mulching",
+        "description": "Spread straw mulch or plastic mulch around plant bases to prevent soil-borne fungal spores from splashing onto lower leaves during irrigation."
+      }
+    ],
+    "warnings": [
+      "Avoid overhead sprinkler irrigation; always irrigate near the plant root base."
+    ],
+    "prevention": [
+      "Practice 3-year crop rotation with non-solanaceous crops (e.g. maize, legumes)",
+      "Maintain adequate plant spacing (60cm x 45cm) for sunlight penetration",
+      "Apply Trichoderma viride enriched organic compost during land preparation"
+    ],
+    "weatherAdvisory": {
+      "recommendation": "Spray protectant fungicide after morning dew dries.",
+      "actionTime": "Morning (8:00 AM - 11:00 AM)",
+      "humidityThreshold": "Moderate to High",
+      "idealTemp": "24°C - 30°C",
+      "sprayStatus": "RECOMMENDED",
+      "sprayStatusText": "Ideal weather conditions for application"
+    },
+    "timestamp": "2026-10-28T17:25:37.106Z",
+    "formattedDate": "28 Oct 2026, 10:55 pm",
+    "location": "Gannavaram, Kistna (Andhra Pradesh)"
   }
 ]
